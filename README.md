@@ -8,15 +8,24 @@
 ## About Me
 
 - AI와 프론트엔드 이해를 바탕으로 제품을 처음부터 끝까지 직접 만듭니다.
-- AI · 트레이딩 · 커뮤니티 도메인의 제품을 만듭니다.
 - 사용자가 이해하고 실행할 수 있는 UX와 명확한 화면 구조를 우선합니다.
 
 ## Tech Stack
 
-### Design & Product
+### Product Design & AI Workflow
 
+![Manyfast](https://img.shields.io/badge/Manyfast-444444?style=flat-square)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
+![UX Pilot](https://img.shields.io/badge/UX_Pilot-555555?style=flat-square)
+![Figma MCP](https://img.shields.io/badge/Figma_MCP-F24E1E?style=flat-square&logo=figma&logoColor=white)
+![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=claude&logoColor=white)
+![OpenAI Codex](https://img.shields.io/badge/OpenAI_Codex-412991?style=flat-square&logo=openai&logoColor=white)
+
+### Planning & Collaboration
+
 ![Notion](https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white)
+![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white)
+![Confluence](https://img.shields.io/badge/Confluence-172B4D?style=flat-square&logo=confluence&logoColor=white)
 
 ### Frontend
 
@@ -30,16 +39,11 @@
 ![Supabase](https://img.shields.io/badge/Supabase-181818?style=flat-square&logo=supabase&logoColor=3FCF8E)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-
-### AI & Workflow
-
-![Claude](https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=claude&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
 ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white)
 
 ## Connect
 
-<a href="https://www.linkedin.com/in/%EA%B0%95%EA%B7%BC-%EB%B0%95-b9a97238a/">
+<a href="https://www.linkedin.com/in/kangkeunpark/">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
 </a>
 <a href="https://kr.tradingview.com/u/Power-xc/">
