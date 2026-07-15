@@ -1,6 +1,6 @@
 # KangKeun Park
 
-> Product Designer · AI Builder · Frontend Developer · Crypto Trader
+> Product/UX Designer · AI Builder · Frontend Developer · Researcher
 
 복잡한 AI·B2B 제품을 사용자가 이해하고 실행할 수 있는 UX로 설계합니다.  
 기획 · UX/UI · 프로토타입 · 구현 가능한 화면 구조까지 하나로 연결합니다.
@@ -9,6 +9,8 @@
 
 - AI와 프론트엔드 이해를 바탕으로 제품을 처음부터 끝까지 직접 만듭니다.
 - 사용자가 이해하고 실행할 수 있는 UX와 명확한 화면 구조를 우선합니다.
+- 문제를 충분히 정의하고, 제약과 리소스를 고려해 우선순위 높은 가설을 데이터로 검증합니다.
+- 새로운 기술의 가능성을 직접 실험하고 검증합니다.
 
 ## Tech Stack
 
@@ -45,9 +47,6 @@
 
 <a href="https://www.linkedin.com/in/kangkeunpark/">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
-</a>
-<a href="https://kr.tradingview.com/u/Power-xc/">
-  <img src="https://img.shields.io/badge/TradingView-131722?style=flat-square&logo=tradingview&logoColor=white" alt="TradingView" />
 </a>
 <a href="mailto:pkk062300@naver.com">
   <img src="https://img.shields.io/badge/Email-03C75A?style=flat-square&logo=naver&logoColor=white" alt="Email" />
