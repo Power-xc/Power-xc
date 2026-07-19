@@ -43,6 +43,12 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white)
 
+## Certifications
+
+- ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white) **Certified Generative AI Engineer Associate** · 2026
+- ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white) **Certified Data Engineer Associate** · 2026
+- ![HRD Korea](https://img.shields.io/badge/HRD_Korea-1C6BBA?style=flat-square) **NCS 디지털디자인 (Digital Design) L5** · 한국산업인력공단 · 2020
+
 ## Connect
 
 <a href="https://www.linkedin.com/in/kangkeunpark/">
