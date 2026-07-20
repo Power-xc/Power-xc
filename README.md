@@ -12,6 +12,11 @@
 - 문제를 충분히 정의하고, 제약과 리소스를 고려해 우선순위 높은 가설을 데이터로 검증합니다.
 - 새로운 기술의 가능성을 직접 실험하고 검증합니다.
 
+## Featured Projects
+
+- **[spc-ai-pos](https://github.com/Power-xc/spc-ai-pos)** — 매출·재고·생산·주문 데이터를 실행 가능한 의사결정으로 바꾸는 프랜차이즈 매장용 AI POS 어시스턴트.
+- **[ux-measure-lab](https://github.com/Power-xc/ux-measure-lab)** — 실제 사용자 행동을 반증 가능한 가설과 사전등록 실험으로 잇는 UX 의사결정 측정 하네스.
+
 ## Tech Stack
 
 ### Product Design & AI Workflow
