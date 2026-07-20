@@ -16,6 +16,8 @@
 
 - **[spc-ai-pos](https://github.com/Power-xc/spc-ai-pos)** — 매출·재고·생산·주문 데이터를 실행 가능한 의사결정으로 바꾸는 프랜차이즈 매장용 AI POS 어시스턴트.
 - **[ux-measure-lab](https://github.com/Power-xc/ux-measure-lab)** — 실제 사용자 행동을 반증 가능한 가설과 사전등록 실험으로 잇는 UX 의사결정 측정 하네스.
+- **[ig-reach-os](https://github.com/Power-xc/ig-reach-os)** — 제품 출시를 정책·법 준수형으로 인스타그램에 자동 도달시키는 마케팅 자동화 플랫폼.
+- **[nirguard](https://github.com/Power-xc/nirguard)** — 화면 밖 유출 귀속을 위한 포렌식 워터마킹 검증 랩 (특허 출원 중).
 
 ## Tech Stack
 
