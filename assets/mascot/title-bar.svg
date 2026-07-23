@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="24" viewBox="0 0 440 24" fill="none" role="img" aria-label="Product/UX Designer · AI Builder · Frontend · Researcher">
+  <rect x="0" y="4.5" width="3" height="15" rx="1.5" fill="#6E7681"/>
+  <defs>
+    <clipPath id="rev"><rect x="0" y="0" width="0" height="24"><animate attributeName="width" values="0;440" dur="2.2s" begin="0.3s" fill="freeze" calcMode="linear"/></rect></clipPath>
+  </defs>
+  <g clip-path="url(#rev)">
+    <text x="14" y="17" font-family="'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="15" font-weight="500" fill="#9AA4AF">Product/UX Designer &#183; AI Builder &#183; Frontend &#183; Researcher</text>
+  </g>
+  <rect y="5.5" width="1.6" height="13" fill="#9AA4AF">
+    <animate attributeName="x" values="15;432" dur="2.2s" begin="0.3s" fill="freeze" calcMode="linear"/>
+    <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.92;1" dur="2.2s" begin="0.3s" fill="freeze"/>
+  </rect>
+</svg>
