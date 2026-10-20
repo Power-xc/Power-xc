@@ -42,20 +42,6 @@ AI로 문제를 정의하고, 기획부터 배포까지 제품을 직접 만드�
 <sub><a href="https://github.com/Power-xc/ux-measure-lab">Repo</a> · <a href="https://ux-measure-lab.vercel.app">Live Demo</a></sub>
 </td>
 </tr>
-<tr>
-<td width="50%" valign="top">
-<a href="https://github.com/Power-xc/huddy"><b>HUDdy</b></a><br />
-<sub>영어 발표 중 화면에 키워드·호흡·속도를 띄우는 AI 스피킹 네비게이터. 음성 인식과 시선 분석 신호를 Claude 피드백으로 연결합니다.</sub><br /><br />
-<img src="https://img.shields.io/badge/Claude_API-D97757?style=flat-square&logo=claude&logoColor=white" alt="Claude API" /> <img src="https://img.shields.io/badge/MediaPipe-0097A7?style=flat-square" alt="MediaPipe" /> <img src="https://img.shields.io/badge/Web_Speech-444444?style=flat-square" alt="Web Speech" /><br />
-<sub><a href="https://github.com/Power-xc/huddy">Repo</a></sub>
-</td>
-<td width="50%" valign="top">
-<a href="https://github.com/Power-xc/trading-rule-screener"><b>Trading Rule Screener</b></a><br />
-<sub>트레이딩 책 13권의 33개 룰을 9년 BTC 데이터로 기계 검증한 하네스. 99개 셀, 통과 0 — 그럴듯한 결과를 의심하는 검증 게이트.</sub><br /><br />
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/Backtesting-444444?style=flat-square" alt="Backtesting" /> <img src="https://img.shields.io/badge/Bootstrap_CI-444444?style=flat-square" alt="Bootstrap CI" /><br />
-<sub><a href="https://github.com/Power-xc/trading-rule-screener">Repo</a></sub>
-</td>
-</tr>
 </table>
 
 ## <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/mascot/11_laptop.png" height="32" alt="" /> Tech Stack
