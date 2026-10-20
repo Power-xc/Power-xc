@@ -42,6 +42,20 @@ AI로 문제를 정의하고, 기획부터 배포까지 제품을 직접 만드�
 <sub><a href="https://github.com/Power-xc/ux-measure-lab">Repo</a> · <a href="https://ux-measure-lab.vercel.app">Live Demo</a></sub>
 </td>
 </tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/Power-xc/nirguard"><b>NIRGuard</b></a><br />
+<sub>화면을 카메라로 재촬영한 유출본을 리뷰 세션까지 역추적하는 포렌식 워터마킹 검증 랩. 불확실하면 지목하지 않는 신뢰도 정책을 둡니다. (특허 출원 중)</sub><br /><br />
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" alt="OpenCV" /> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" /><br />
+<sub><a href="https://github.com/Power-xc/nirguard">Repo</a></sub>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/Power-xc/notion-jira-sync"><b>notion-jira-sync</b></a><br />
+<sub>Notion 프로젝트 DB를 원천으로 Jira 이슈와 Confluence 주간보고를 자동 생성·갱신하는 CLI. 기본 dry-run, 실제 쓰기는 --apply로만.</sub><br /><br />
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white" alt="Notion" /> <img src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white" alt="Jira" /> <img src="https://img.shields.io/badge/Confluence-172B4D?style=flat-square&logo=confluence&logoColor=white" alt="Confluence" /><br />
+<sub><a href="https://github.com/Power-xc/notion-jira-sync">Repo</a></sub>
+</td>
+</tr>
 </table>
 
 ## <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/mascot/11_laptop.png" height="32" alt="" /> Tech Stack
