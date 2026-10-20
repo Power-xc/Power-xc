@@ -54,6 +54,11 @@ AI로 문제를 정의하고, 기획부터 배포까지 제품을 직접 만드�
 ![Figma MCP](https://img.shields.io/badge/Figma_MCP-F24E1E?style=flat-square&logo=figma&logoColor=white)
 ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white)
 
+### AI Video & Creative
+
+![Higgsfield](https://img.shields.io/badge/Higgsfield-111111?style=flat-square)
+![Magnific](https://img.shields.io/badge/Magnific-5B3FD9?style=flat-square)
+
 ### Product Design
 
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
