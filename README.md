@@ -16,7 +16,7 @@ AI로 문제를 정의하고, 기획부터 배포까지 제품을 직접 만드�
 <a href="https://www.instagram.com/powerxcmemo/reels/"><img src="https://img.shields.io/badge/Instagram_Reels-E4405F?style=flat-square&logo=instagram&logoColor=white" alt="Instagram Reels" /></a>
 <a href="mailto:pkk062300@naver.com"><img src="https://img.shields.io/badge/Email-03C75A?style=flat-square&logo=naver&logoColor=white" alt="Email" /></a>
 
-🛠 **Now** — 직접 학습한 정수리 세그멘테이션 모델을 얹은 탈모 케어 서비스를 만들고 있습니다.
+🛠 **Now** — 피부·두피·다이어트 기록부터 성분 대조, 업체 맵, 비슷한 케이스 커뮤니티까지 잇는 케어 서비스 [모하우](https://www.mohow.co.kr)를 운영하며, 직접 학습한 정수리(탈모) 세그멘테이션 모델을 얹고 있습니다.
 
 ## <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/mascot/05_happy.png" height="32" alt="" /> About Me
 
