@@ -63,7 +63,12 @@ AI로 문제를 정의하고, 기획부터 배포까지 제품을 직접 만드�
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white" alt="Notion" /> <img src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white" alt="Jira" /> <img src="https://img.shields.io/badge/Confluence-172B4D?style=flat-square&logo=confluence&logoColor=white" alt="Confluence" /><br />
 <sub><a href="https://github.com/Power-xc/notion-jira-sync">Repo</a></sub>
 </td>
-<td width="50%" valign="top"></td>
+<td width="50%" valign="top">
+<a href="https://github.com/Power-xc/ig-reach-os"><b>ig-reach-os</b></a><br />
+<sub>제품 출시 한 번으로 인스타그램 광고와 게시물을 함께 내고, 먼저 반응한 사용자에게만 DM으로 응대하는 마케팅 자동화. 동의·야간 발송·수신거부 규칙(정보통신망법 §50)을 모든 발신이 지나는 관문 코드로 강제합니다.</sub><br /><br />
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/Meta_Graph_API-0467DF?style=flat-square&logo=meta&logoColor=white" alt="Meta Graph API" /> <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" /><br />
+<sub><a href="https://github.com/Power-xc/ig-reach-os">Repo</a></sub>
+</td>
 </tr>
 </table>
 
