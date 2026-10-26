@@ -5,16 +5,12 @@
   <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=28&duration=2000&pause=1000&repeat=false&width=280&height=44&color=1F2328&lines=KangKeun+Park" alt="KangKeun Park" />
 </picture>
 
-<img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/mascot/title-bar.svg?v=2" width="330" alt="AI Builder · Product/UX Designer · Researcher" />
+<img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/mascot/title-bar.svg?v=3" width="330" alt="Product/UX Designer · AI Builder · Researcher" />
 
-AI로 문제를 정의하고, 기획부터 배포까지 제품을 직접 만드는 AI Builder입니다.  
-프로덕트 디자이너 출신으로, 복잡한 AI·B2B 제품을 사용자가 이해하고 실행할 수 있는 경험으로 풀어냅니다.
+**Senior Product Designer (AI · B2B) who prototypes in code**  
+복잡한 AI·B2B 제품을 사용자가 이해하고 실행할 수 있는 경험으로 설계하고, 기획부터 배포까지 직접 만들어 검증합니다.
 
-<a href="https://www.figma.com/proto/OwNfjjMqtsXp1rhLfafgUD/%EB%B0%95%EA%B0%95%EA%B7%BC-%ED%8F%AC%ED%86%A0%ED%8F%B4%EB%A6%AC%EC%98%A4?node-id=282-330&p=f&viewport=-1659%2C-529%2C0.36&t=WQlw8gQYeSe50axP-1&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=282%3A330"><img src="https://img.shields.io/badge/Portfolio-4F46E5?style=flat-square&logo=figma&logoColor=white" alt="Portfolio" /></a>
-<a href="https://www.figma.com/proto/OwNfjjMqtsXp1rhLfafgUD/%EB%B0%95%EA%B0%95%EA%B7%BC-%ED%8F%AC%ED%86%A0%ED%8F%B4%EB%A6%AC%EC%98%A4?node-id=287-6371&p=f&viewport=2%2C55%2C1.58&t=yZKyF4nzgQSQNKKY-1&scaling=min-zoom&content-scaling=fixed&page-id=84%3A726"><img src="https://img.shields.io/badge/Resume-1F2328?style=flat-square&logo=figma&logoColor=white" alt="Resume" /></a>
 <a href="https://www.linkedin.com/in/kangkeunpark/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="https://www.instagram.com/powerxcmemo/reels/"><img src="https://img.shields.io/badge/Instagram_Reels-E4405F?style=flat-square&logo=instagram&logoColor=white" alt="Instagram Reels" /></a>
-<a href="mailto:pkk062300@naver.com"><img src="https://img.shields.io/badge/Email-03C75A?style=flat-square&logo=naver&logoColor=white" alt="Email" /></a>
 
 🛠 **Now** — 피부·두피·다이어트 기록부터 성분 대조, 업체 맵, 비슷한 케이스 커뮤니티까지 잇는 케어 서비스 [모하우](https://www.mohow.co.kr)를 운영하며, 직접 학습한 정수리(탈모) 세그멘테이션 모델을 얹고 있습니다.
 
@@ -107,7 +103,7 @@ AI로 문제를 정의하고, 기획부터 배포까지 제품을 직접 만드�
 
 - ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white) **Certified Generative AI Engineer Associate** · 2026
 - ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white) **Certified Data Engineer Associate** · 2026
-- ![HRD Korea](https://img.shields.io/badge/HRD_Korea-1C6BBA?style=flat-square) **NCS 디지털디자인 (Digital Design) L5** · 한국산업인력공단 · 2020
+- ![HRD Korea](https://img.shields.io/badge/HRD_Korea-1C6BBA?style=flat-square) **NCS 디지털디자인 (Digital Design) L5** · 한국산업인력공단 · 2021
 
 ## <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/mascot/14_peek.png" height="32" alt="" /> GitHub
 
