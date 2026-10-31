@@ -1,4 +1,4 @@
-name: Generate Snake
+name: Generate Snake & Langs
 
 on:
   schedule:
@@ -24,6 +24,24 @@ jobs:
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
+
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&title_color=4F46E5&text_color=24292f&bg_color=00000000&hide_border=true&layout=compact&langs_count=8
+          path: dist/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
+
+      - name: Generate top languages card (dark)
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&title_color=4F46E5&text_color=c9d1d9&bg_color=00000000&hide_border=true&layout=compact&langs_count=8
+          path: dist/top-langs-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: true
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4
