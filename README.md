@@ -108,9 +108,9 @@
 ## <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/mascot/14_peek.png" height="32" alt="" /> GitHub
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Power-xc&title_color=4F46E5&text_color=c9d1d9&bg_color=00000000&hide_border=true&layout=compact&langs_count=8" />
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Power-xc&title_color=4F46E5&text_color=24292f&bg_color=00000000&hide_border=true&layout=compact&langs_count=8" />
-  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=Power-xc&title_color=4F46E5&text_color=c9d1d9&bg_color=00000000&hide_border=true&layout=compact&langs_count=8" height="170" alt="langs" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Power-xc/Power-xc/output/top-langs-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Power-xc/Power-xc/output/top-langs.svg" />
+  <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/output/top-langs.svg" height="170" alt="Most used languages" />
 </picture>
 
 <picture>
