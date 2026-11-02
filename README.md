@@ -10,7 +10,7 @@
 **Senior Product Designer (AI · B2B) who prototypes in code**  
 복잡한 AI·B2B 제품을 사용자가 이해하고 실행할 수 있는 경험으로 설계하고, 기획부터 배포까지 직접 만들어 검증합니다.
 
-<a href="https://www.linkedin.com/in/kangkeunpark/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="https://www.linkedin.com/in/kangkeunpark/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a> <a href="mailto:pkk062300@naver.com"><img src="https://img.shields.io/badge/pkk062300%40naver.com-03C75A?style=flat-square&logo=naver&logoColor=white" alt="Email pkk062300@naver.com" /></a>
 
 🛠 **Now** — 피부·두피·다이어트 기록부터 성분 대조, 업체 맵, 비슷한 케이스 커뮤니티까지 잇는 케어 서비스 [모하우](https://www.mohow.co.kr)를 운영하며, 직접 학습한 정수리(탈모) 세그멘테이션 모델을 얹고 있습니다.
 
@@ -25,57 +25,71 @@
 
 <table>
 <tr>
-<td colspan="2" valign="top">
+<td width="50%" valign="top">
 <a href="https://github.com/Power-xc/power-ux-harness"><b>power-ux-harness</b></a><br />
-<sub>AI 코딩 에이전트가 시니어 프로덕트 디자이너의 절차로 UX를 설계하고 검토하게 하는 스킬 10개. 기획서·링크만 넣으면 자료를 조사하고 출처 붙은 합성 페르소나로 후보안을 미리 걸러 낸 뒤(ux-simulate), 흐름·화면 설계서·문구·리뷰·접근성(WCAG 2.2·KWCAG 2.2)·기만 패턴(공정위 가이드라인)·지표까지 같은 판정으로 잇습니다.</sub><br /><br />
 <a href="https://github.com/Power-xc/power-ux-harness"><picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Power-xc/power-ux-harness/main/assets/demos/hero-dark.gif" />
-<img src="https://raw.githubusercontent.com/Power-xc/power-ux-harness/main/assets/demos/hero-light.gif" width="600" alt="구독 해지 화면 요청이 ux-simulate부터 ux-metrics까지 9단계를 지나며 단계마다 판정을 남기는 데모" />
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/power-ux-harness-dark.gif" />
+<img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/power-ux-harness-light.gif" width="400" alt="요청 한 줄마다 맞는 UX 스킬이 켜지고, 스킬 10개가 차례로 자기 예시를 고치기 전에서 고친 후로 바꾸는 데모" />
 </picture></a><br />
+<sub>AI 코딩 에이전트가 시니어 프로덕트 디자이너의 절차로 UX를 설계하고 검토하게 하는 스킬 10개. 출처 붙은 합성 페르소나 시뮬레이션(ux-simulate)부터 흐름·화면 설계서·문구·리뷰·접근성(WCAG 2.2·KWCAG 2.2)·기만 패턴(공정위 가이드라인)·지표까지 같은 판정으로 잇습니다.</sub><br /><br />
 <img src="https://img.shields.io/badge/Agent_Skills-111111?style=flat-square" alt="Agent Skills" /> <img src="https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" /> <img src="https://img.shields.io/badge/UX_Research-444444?style=flat-square" alt="UX Research" /> <img src="https://img.shields.io/badge/WCAG_2.2-444444?style=flat-square" alt="WCAG 2.2" /><br />
 <sub><a href="https://github.com/Power-xc/power-ux-harness">Repo</a> · <a href="https://power-ux-harness-guide.vercel.app">Skill Guide</a></sub>
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 <a href="https://github.com/Power-xc/usage-gauge"><b>usage-gauge</b></a><br />
-<sub>Claude·Codex 등 AI 코딩 도구의 남은 사용량을 홍채 다이얼과 스모크 유리 패널로 보여주는 macOS 게이지·메뉴바. 초기화 시각이 지나면 바로 반영하고, 뒤 배경 밝기에 맞춰 유리 진하기를 조절합니다.</sub><br /><br />
-<img src="https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white" alt="Swift" /> <img src="https://img.shields.io/badge/SwiftUI-0D96F6?style=flat-square&logo=swift&logoColor=white" alt="SwiftUI" /> <img src="https://img.shields.io/badge/macOS-000000?style=flat-square&logo=apple&logoColor=white" alt="macOS" /><br />
-<sub><a href="https://github.com/Power-xc/usage-gauge">Repo</a></sub>
+<a href="https://github.com/Power-xc/usage-gauge"><picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/usage-gauge-dark.gif" />
+<img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/usage-gauge-light.gif" width="400" alt="메뉴바와 패널의 남은 사용량이 차오르고, 그래프가 다이얼·바·스파크 바·숫자로 바뀐 뒤 소진 예측이 뜨는 데모" />
+</picture></a><br />
+<sub>쓰는 모든 AI의 남은 한도를, 언제 바닥나는지까지. Claude·Codex 등 100여 개 서비스의 남은 사용량과 초기화 시각을 화면 위 게이지와 메뉴바에 띄우고, 그래프 12종·스타일 3종 중에서 고릅니다. macOS·Windows.</sub><br /><br />
+<img src="https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white" alt="Swift" /> <img src="https://img.shields.io/badge/SwiftUI-0D96F6?style=flat-square&logo=swift&logoColor=white" alt="SwiftUI" /> <img src="https://img.shields.io/badge/Tauri-24C8D8?style=flat-square&logo=tauri&logoColor=white" alt="Tauri" /> <img src="https://img.shields.io/badge/macOS_%C2%B7_Windows-444444?style=flat-square" alt="macOS · Windows" /><br />
+<sub><a href="https://github.com/Power-xc/usage-gauge">Repo</a> · <a href="https://github.com/Power-xc/usage-gauge/releases/latest">Download</a></sub>
 </td>
+</tr>
+<tr></tr>
+<tr>
 <td width="50%" valign="top">
 <a href="https://github.com/Power-xc/power-persona-sim"><b>Persona Sim</b></a><br />
-<sub>NVIDIA Nemotron 100만 합성 페르소나로 설문·심층인터뷰를 시뮬레이션하고, LLM 응답을 분포 적합도·known-truth·멀티모델 교차로 검증합니다.</sub><br /><br />
+<a href="https://github.com/Power-xc/power-persona-sim"><picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/power-persona-sim-dark.gif" />
+<img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/power-persona-sim-light.gif" width="400" alt="합성 페르소나 131명을 12셀로 뽑아 설문을 돌리고, 알려진 정답·분포 검증에 실패한 결과 전체를 DISCARD로 폐기하는 데모" />
+</picture></a><br />
+<sub>NVIDIA Nemotron 100만 합성 페르소나로 설문·심층인터뷰를 시뮬레이션하고, LLM 응답을 분포 적합도·known-truth·자기일관성·멀티모델 교차로 검증합니다. 알려진 정답이나 분포 검증에 실패하면 결과 전체를 버립니다.</sub><br /><br />
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/NVIDIA_Nemotron-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="NVIDIA Nemotron" /> <img src="https://img.shields.io/badge/LLM_Simulation-444444?style=flat-square" alt="LLM Simulation" /><br />
 <sub><a href="https://github.com/Power-xc/power-persona-sim">Repo</a></sub>
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 <a href="https://github.com/Power-xc/ux-measure-lab"><b>UX MeasureLab</b></a><br />
+<a href="https://github.com/Power-xc/ux-measure-lab"><picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/ux-measure-lab-dark.gif" />
+<img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/ux-measure-lab-light.gif" width="400" alt="가입 퍼널 질문에서 가장 큰 이탈을 찾고, 가설을 사전 등록한 실험의 결과를 코드가 판정한 뒤 사람이 결정을 기록하는 데모" />
+</picture></a><br />
 <sub>질문 하나로 측정을 자동 구성해 가설 → 사전 등록 실험 → 사람의 결정으로 잇는 워크스페이스. AI는 후보를 제안하고, 판정은 코드가 합니다.</sub><br /><br />
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/Experimentation-444444?style=flat-square" alt="Experimentation" /> <img src="https://img.shields.io/badge/AI_Hypotheses-444444?style=flat-square" alt="AI Hypotheses" /><br />
 <sub><a href="https://github.com/Power-xc/ux-measure-lab">Repo</a> · <a href="https://ux-measure-lab.vercel.app">Live Demo</a></sub>
 </td>
+</tr>
+<tr></tr>
+<tr>
 <td width="50%" valign="top">
 <a href="https://github.com/Power-xc/nirguard"><b>NIRGuard</b></a><br />
+<a href="https://github.com/Power-xc/nirguard"><picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/nirguard-dark.gif" />
+<img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/nirguard-light.gif" width="400" alt="재촬영 시뮬레이션 사진에서 패턴을 복원해 상위 후보를 대조하고, 선명하면 후보를 받아들이고 흐리면 지목하지 않는 데모" />
+</picture></a><br />
 <sub>화면을 카메라로 재촬영한 유출본을 리뷰 세션까지 역추적하는 포렌식 워터마킹 검증 랩. 불확실하면 지목하지 않는 신뢰도 정책을 둡니다. (특허 출원 중)</sub><br /><br />
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" alt="OpenCV" /> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" /><br />
 <sub><a href="https://github.com/Power-xc/nirguard">Repo</a></sub>
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 <a href="https://github.com/Power-xc/notion-jira-sync"><b>notion-jira-sync</b></a><br />
+<a href="https://github.com/Power-xc/notion-jira-sync"><picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/notion-jira-sync-dark.gif" />
+<img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/notion-jira-sync-light.gif" width="400" alt="dry-run으로 Jira 생성·업데이트·스킵 계획과 주간보고 미리보기를 보여 준 뒤, --apply로 실제 반영하는 터미널 데모" />
+</picture></a><br />
 <sub>Notion 프로젝트 DB를 원천으로 Jira 이슈와 Confluence 주간보고를 자동 생성·갱신하는 CLI. 기본 dry-run, 실제 쓰기는 --apply로만.</sub><br /><br />
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white" alt="Notion" /> <img src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white" alt="Jira" /> <img src="https://img.shields.io/badge/Confluence-172B4D?style=flat-square&logo=confluence&logoColor=white" alt="Confluence" /><br />
 <sub><a href="https://github.com/Power-xc/notion-jira-sync">Repo</a></sub>
-</td>
-<td width="50%" valign="top">
-<a href="https://github.com/Power-xc/ig-reach-os"><b>ig-reach-os</b></a><br />
-<sub>제품 출시 한 번으로 인스타그램 광고와 게시물을 함께 내고, 먼저 반응한 사용자에게만 DM으로 응대하는 마케팅 자동화. 동의·야간 발송·수신거부 규칙(정보통신망법 §50)을 모든 발신이 지나는 관문 코드로 강제합니다.</sub><br /><br />
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/Meta_Graph_API-0467DF?style=flat-square&logo=meta&logoColor=white" alt="Meta Graph API" /> <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" /><br />
-<sub><a href="https://github.com/Power-xc/ig-reach-os">Repo</a></sub>
 </td>
 </tr>
 </table>
