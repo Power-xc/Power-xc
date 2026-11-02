@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="kit.css" />
+    <script src="kit.js"></script>
+    <style>
+      .stage-label { left: var(--pad); top: 44px; }
+      .frow { position: absolute; left: var(--pad); right: var(--pad); height: 16px; display: flex; align-items: center; }
+      .frow .nm { width: 80px; font-size: 11.5px; color: var(--muted); white-space: nowrap; }
+      .frow .tr { position: relative; width: 190px; height: 8px; }
+      .frow .tr i { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 2px; background: var(--accent); }
+      .frow .n { width: 70px; text-align: right; font: 500 11.5px/16px var(--mono); }
+      .callout { left: var(--pad); right: var(--pad); top: 166px; font: 600 12.5px/18px var(--ui); white-space: nowrap; }
+      .hyp { left: var(--pad); right: var(--pad); top: 64px; font: 500 13px/18px var(--ui); white-space: nowrap; }
+      .chips { left: var(--pad); top: 94px; height: 20px; display: flex; align-items: center; gap: 8px; }
+      .lock { left: var(--pad); top: 122px; font-size: 11px; color: var(--muted); white-space: nowrap; }
+      .crit { left: var(--pad); right: var(--pad); top: 148px; display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); }
+      .crit div { padding: 6px 0; border-bottom: 1px solid var(--line); font: 500 12px/16px var(--ui); white-space: nowrap; }
+      .crit div:nth-child(odd) { padding-right: 8px; }
+      .crit b { font: 600 12px/16px var(--mono); margin-left: 6px; }
+      .big { left: var(--pad); top: 62px; font: 600 30px/36px var(--mono); white-space: nowrap; }
+      .big span { color: var(--muted); font-weight: 400; margin: 0 4px; }
+      .delta { left: var(--pad); top: 102px; font: 600 13px/18px var(--ui); white-space: nowrap; }
+      .raw { right: var(--pad); top: 70px; font: 400 11px/16px var(--mono); color: var(--muted); text-align: right; white-space: nowrap; }
+      .guard { left: var(--pad); right: var(--pad); top: 132px; height: 22px; display: flex; align-items: center; justify-content: space-between; font: 500 12px/18px var(--ui); white-space: nowrap; }
+      .checks { left: var(--pad); right: var(--pad); top: 166px; font: 400 11px/16px var(--ui); color: var(--muted); white-space: nowrap; }
+      .vl { font: 600 10.5px/18px var(--mono); color: var(--muted); letter-spacing: .02em; }
+      .vl b { font: 700 13px/18px var(--ui); margin-left: 8px; color: var(--ok); }
+      .vchip { position: relative; width: 116px; height: 18px; }
+      .vchip .chip { position: absolute; right: 0; top: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="stage">
+      <div id="q" class="input"></div>
+
+      <!-- 1막: 측정 -->
+      <div id="l1" class="abs label stage-label">Measure</div>
+      <div id="funnel"></div>
+      <div id="callout" class="abs callout"><span class="p1c">가입 시작 → 데이터 연결</span> <span class="p1c mono" style="margin-left:4px">47% · 748명 이탈</span></div>
+
+      <!-- 2막 A: 가설 → 사전 등록 -->
+      <div id="l2" class="abs label stage-label">Hypothesis · Experiment</div>
+      <div id="hyp" class="abs hyp">데이터 연결 전 단계의 정보와 선택 부담을 줄인다.</div>
+      <div id="chips" class="abs chips"><span id="cDraft" class="chip gray">Draft</span><span id="cArrow" class="muted">→</span><span id="cPre" class="chip accent">Preregistered</span></div>
+      <div id="lock" class="abs lock">결과를 보기 전에 판정 기준을 잠그세요</div>
+      <div id="crit" class="abs crit">
+        <div>성공 기준<b>3pp</b></div><div>최소 표본<b>500</b></div>
+        <div>기간<b>14일</b></div><div>가드레일<b>+1pp 이하</b></div>
+      </div>
+
+      <!-- 2막 B: 결과 -->
+      <div id="l3" class="abs label stage-label">Validate</div>
+      <div id="big" class="abs big"></div>
+      <div id="raw" class="abs raw">200/1000 vs 240/1000</div>
+      <div id="delta" class="abs delta okc">+4pp · +20% 상대 변화</div>
+      <div id="guard" class="abs guard"><span>가드레일 <span class="mono">2% → 2.5% (+0.5pp)</span></span><span class="chip ok">pass</span></div>
+      <div id="checks" class="abs checks"><span class="okc">검사 4개 통과</span> · 최소 표본 · 관찰 기간 · Practical threshold · Guardrail</div>
+
+      <div id="vhr" class="verdict-hr"></div>
+      <div id="verdict" class="verdict">
+        <span class="vl">DETERMINISTIC VERDICT<b>가설 지지</b></span>
+        <span class="vchip"><span id="vHr" class="chip gray">Human review</span><span id="vDec" class="chip ok">Decision recorded</span></span>
+      </div>
+    </div>
+    <script>
+      const QUESTION = "가입 퍼널에서 사용자가 가장 많이 이탈하는 구간은 어디인가요?";
+      const STEPS = [["랜딩 방문", 2480], ["가입 시작", 1590], ["데이터 연결", 842], ["첫 리포트", 611], ["7일 재방문", 421]];
+      const MAXV = 2480, TRACK = 190;
+      const T = { bars: 1200, call: 2400, out1: 3700, a: 3900, draft: 4200, pre: 4900, crit: 5000, out2: 6200,
+                  b: 6400, count: 6500, delta: 7100, guard: 7400, checks: 7800, verdict: 8300, decide: 9300 };
+      const END = 9700;
+
+      $("funnel").innerHTML = STEPS.map(([nm, v], i) =>
+        `<div class="frow" id="r${i}" style="top:${64 + i * 20}px"><span class="nm">${nm}</span><span class="tr"><i id="b${i}"></i></span><span class="n" id="n${i}"></span></div>`).join("");
+
+      const groups1 = ["l1", "funnel", "callout"];
+      window.CARD = defineCard({
+        end: END,
+        draw(t) {
+          typeInto($("q"), QUESTION, t, 150, 36, 1100);
+
+          // 1막
+          const o1 = 1 - easeInCubic(progress(t, T.out1, 180));
+          fade($("l1"), t, 1150, 240, T.out1);
+          STEPS.forEach(([, v], i) => {
+            const row = $("r" + i);
+            fade(row, t, T.bars + i * 90, 200, T.out1);
+            const p = easeOutCubic(progress(t, T.bars + i * 90, 700));
+            $("b" + i).style.width = (v / MAXV * TRACK * p) + "px";
+            $("n" + i).textContent = Math.round(v * p).toLocaleString("en-US");
+            const hot = i === 2 && t >= T.call;
+            $("b" + i).style.background = hot ? "var(--p1)" : "var(--accent)";
+            $("n" + i).style.color = hot ? "var(--p1)" : "var(--fg)";
+          });
+          fade($("callout"), t, T.call, 240, T.out1);
+
+          // 2막 A
+          fade($("l2"), t, T.a, 240, T.out2);
+          fade($("hyp"), t, T.a, 240, T.out2);
+          fade($("chips"), t, T.draft, 240, T.out2);
+          const pre = easeOutCubic(progress(t, T.pre, 200));
+          $("cDraft").style.opacity = 1 - 0.6 * pre;
+          $("cArrow").style.opacity = pre;
+          $("cPre").style.opacity = pre;
+          fade($("lock"), t, T.pre, 240, T.out2);
+          fade($("crit"), t, T.crit, 240, T.out2);
+
+          // 2막 B
+          fade($("l3"), t, T.b, 240);
+          const c = easeOutCubic(progress(t, T.count, 600));
+          fade($("big"), t, T.b, 240);
+          $("big").innerHTML = `${Math.round(20 * (0.3 + 0.7 * c))}%<span>→</span>${Math.round(24 * c)}%`;
+          fade($("raw"), t, T.b, 240);
+          fade($("delta"), t, T.delta);
+          fade($("guard"), t, T.guard);
+          fade($("checks"), t, T.checks);
+
+          // 판정: 코드의 판정 → 사람의 결정
+          fade($("vhr"), t, T.verdict);
+          fade($("verdict"), t, T.verdict);
+          const d = easeOutCubic(progress(t, T.decide, 220));
+          $("vHr").style.opacity = 1 - d;
+          $("vDec").style.opacity = d;
+        },
+      });
+    </script>
+  </body>
+</html>

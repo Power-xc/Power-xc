@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="kit.css" />
+    <script src="kit.js"></script>
+    <style>
+      /* 앱 Theme.swift의 값: 스모크 패널, 흰 글자 투명도, 서비스 고유색, 위험 색 */
+      :root {
+        --smoke: #090a0f;
+        --w92: rgba(255, 255, 255, 0.92);
+        --w62: rgba(255, 255, 255, 0.62);
+        --w42: rgba(255, 255, 255, 0.42);
+        --w14: rgba(255, 255, 255, 0.14);
+        --w10: rgba(255, 255, 255, 0.1);
+        --critical: #ff8080;
+        --lav: #c9b6ff;
+      }
+      .menubar {
+        position: absolute;
+        right: var(--pad);
+        top: 16px;
+        height: 18px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font: 600 12px/18px var(--ui);
+      }
+      .mitem {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .mbar {
+        position: relative;
+        width: 24px;
+        height: 7px;
+        border-radius: 3.5px;
+        overflow: hidden;
+        background: color-mix(in srgb, var(--fg) 16%, transparent);
+      }
+      .mbar i {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 3.5px;
+        background: var(--fg);
+      }
+      .mitem.low .mbar i,
+      .mitem.low b {
+        background: none;
+      }
+      .mitem.low .mbar i {
+        background: var(--p1);
+      }
+      .mitem.low b {
+        color: var(--p1);
+      }
+      .mitem b {
+        font: 600 12px/18px var(--mono);
+        min-width: 26px;
+        text-align: right;
+      }
+      .panel {
+        position: absolute;
+        left: var(--pad);
+        right: var(--pad);
+        top: 44px;
+        height: 132px;
+        border-radius: 16px;
+        background: var(--smoke);
+        border: 1px solid var(--w10);
+        color: var(--w92);
+        overflow: hidden;
+      }
+      .phead {
+        position: absolute;
+        left: 14px;
+        right: 14px;
+        top: 10px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font: 400 10.5px/16px var(--ui);
+        color: var(--w62);
+      }
+      .types {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .tname {
+        position: relative;
+        width: 52px;
+        height: 16px;
+        text-align: right;
+        color: var(--w92);
+      }
+      .tname span {
+        position: absolute;
+        right: 0;
+        top: 0;
+        white-space: nowrap;
+      }
+      .dots {
+        display: flex;
+        gap: 4px;
+      }
+      .dots i {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: var(--w14);
+      }
+      .dots i.on {
+        background: var(--lav);
+      }
+      .divider {
+        position: absolute;
+        left: 50%;
+        top: 36px;
+        bottom: 14px;
+        width: 1px;
+        background: var(--w10);
+      }
+      .col {
+        position: absolute;
+        top: 34px;
+        width: 178px;
+        height: 100px;
+      }
+      .gfx {
+        position: absolute;
+        left: 14px;
+        top: 14px;
+        width: 62px;
+        height: 62px;
+      }
+      .layer {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+      }
+      .pct {
+        font: 600 15px/1 var(--mono);
+        color: var(--w92);
+      }
+      .pct small {
+        font-size: 8px;
+        margin-left: 1px;
+      }
+      .pct.crit {
+        color: var(--critical);
+      }
+      .info {
+        position: absolute;
+        left: 86px;
+        top: 18px;
+        right: 8px;
+        display: grid;
+        gap: 5px;
+      }
+      .name {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font: 700 11px/14px var(--mono);
+        letter-spacing: 0.02em;
+      }
+      .name i {
+        width: 7px;
+        height: 7px;
+        flex: none;
+      }
+      .name em {
+        font: 400 8.5px/14px var(--mono);
+        font-style: normal;
+        color: var(--w42);
+        letter-spacing: 0.04em;
+      }
+      .reset {
+        font: 400 10.5px/14px var(--ui);
+        color: var(--w62);
+        white-space: nowrap;
+      }
+      .week {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font: 400 10.5px/14px var(--mono);
+        color: var(--w62);
+        white-space: nowrap;
+      }
+      .week b {
+        color: var(--w92);
+        font-weight: 600;
+      }
+      .wbar {
+        position: relative;
+        width: 34px;
+        height: 4px;
+        border-radius: 2px;
+        background: var(--w14);
+        overflow: hidden;
+      }
+      .wbar i {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: var(--w62);
+      }
+      .hbar {
+        width: 62px;
+        height: 6px;
+        border-radius: 3px;
+        background: var(--w14);
+        position: relative;
+        overflow: hidden;
+      }
+      .hbar i {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        border-radius: 3px;
+      }
+      .spark {
+        display: flex;
+        align-items: flex-end;
+        gap: 2px;
+        height: 26px;
+      }
+      .spark i {
+        width: 3px;
+        border-radius: 1px;
+      }
+      .big {
+        font: 600 24px/1 var(--mono);
+      }
+      .big small {
+        font-size: 11px;
+        margin-left: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="stage">
+      <div id="mlabel" class="abs label" style="left: var(--pad); top: 18px">
+        상단바
+      </div>
+      <div id="menubar" class="menubar">
+        <span class="mitem"
+          ><span>Claude</span><span class="mbar"><i id="mb0"></i></span
+          ><b id="mn0">94%</b></span
+        >
+        <span class="mitem low"
+          ><span>Codex</span><span class="mbar"><i id="mb1"></i></span
+          ><b id="mn1">8%</b></span
+        >
+      </div>
+      <div id="panel" class="panel">
+        <div class="phead">
+          <span>남은 사용량</span
+          ><span class="types"
+            ><span id="tname" class="tname"></span
+            ><span id="dots" class="dots"></span
+          ></span>
+        </div>
+        <div class="divider"></div>
+      </div>
+      <div id="vhr" class="verdict-hr"></div>
+      <div id="verdict" class="verdict">
+        <span>소진 예측 · Codex 8% 남음</span
+        ><span class="chip p1">28분 후 소진</span>
+      </div>
+    </div>
+    <script>
+      // 홍보 렌더러(SampleData.still)와 같은 값: Claude Max 94%·주간 37%, Codex Plus 8%·주간 26%
+      const TOOLS = [
+        {
+          name: "CLAUDE",
+          plan: "MAX",
+          color: "#c15f3c",
+          remain: 94,
+          reset: "3h 50m 후 초기화",
+          week: 37,
+          spark: [9, 12, 16, 11, 7, 14, 18, 13, 10, 6, 4, 3],
+        },
+        {
+          name: "CODEX",
+          plan: "PLUS",
+          color: "#0d8a68",
+          remain: 8,
+          reset: "47m 후 초기화",
+          week: 26,
+          spark: [8, 13, 17, 21, 19, 24, 22, 25, 23, 26, 24, 26],
+        },
+      ];
+      // PanelLayout 순서상 위치: 다이얼 0, 바 1, 숫자 2, 스파크 바 10 (12종)
+      const TYPES = [
+        { key: "dial", label: "다이얼", dot: 0, at: 0 },
+        { key: "bars", label: "바", dot: 1, at: 2700 },
+        { key: "spark", label: "스파크 바", dot: 10, at: 3800 },
+        { key: "big", label: "숫자", dot: 2, at: 4900 },
+        { key: "dial", label: "다이얼", dot: 0, at: 6000 },
+      ];
+      const XFADE = 220,
+        FILL_AT = 500,
+        FILL_DUR = 1300,
+        VERDICT_T = 6700;
+      const TICKS = 40;
+
+      $("dots").innerHTML = Array.from({ length: 12 }, () => "<i></i>").join(
+        "",
+      );
+      $("tname").innerHTML = TYPES.map(
+        (ty, i) => `<span data-i="${i}">${ty.label}</span>`,
+      ).join("");
+
+      function dialSvg(tool, remain) {
+        const lit = Math.round((remain / 100) * TICKS);
+        let ticks = "";
+        for (let k = 0; k < TICKS; k++) {
+          const a = (k / TICKS) * 2 * Math.PI - Math.PI / 2;
+          const head = k === lit - 1;
+          const [r0, r1] = head ? [20, 30] : [22, 29];
+          const x0 = 31 + r0 * Math.cos(a),
+            y0 = 31 + r0 * Math.sin(a),
+            x1 = 31 + r1 * Math.cos(a),
+            y1 = 31 + r1 * Math.sin(a);
+          const color = head
+            ? tool.color
+            : k < lit
+              ? "var(--w92)"
+              : "var(--w14)";
+          ticks += `<line x1="${x0.toFixed(2)}" y1="${y0.toFixed(2)}" x2="${x1.toFixed(2)}" y2="${y1.toFixed(2)}" stroke="${color}" stroke-width="${head ? 2.4 : 1.5}"/>`;
+        }
+        return `<svg width="62" height="62" viewBox="0 0 62 62">${ticks}</svg>`;
+      }
+      const pctHtml = (v, cls = "pct") =>
+        `<span class="${cls}${v <= 10 ? " crit" : ""}">${Math.round(v)}<small>%</small></span>`;
+
+      const cols = TOOLS.map((tool, i) => {
+        const col = document.createElement("div");
+        col.className = "col";
+        col.style.left = i * 179 + "px";
+        col.innerHTML = `
+    <div class="gfx">
+      <div class="layer" data-k="dial"></div>
+      <div class="layer" data-k="bars"><div style="display:grid;gap:8px;justify-items:start">${pctHtml(tool.remain)}<span class="hbar"><i style="width:${tool.remain}%;background:${tool.color}"></i></span></div></div>
+      <div class="layer" data-k="spark"><div style="display:grid;gap:6px;justify-items:start">${pctHtml(tool.remain)}<span class="spark">${tool.spark.map((h) => `<i style="height:${h}px;background:${tool.color}"></i>`).join("")}</span></div></div>
+      <div class="layer" data-k="big">${pctHtml(tool.remain, "big")}</div>
+    </div>
+    <div class="info">
+      <span class="name"><i style="background:${tool.color}"></i>${tool.name}<em>${tool.plan}</em></span>
+      <span class="reset">${tool.reset}</span>
+      <span class="week">주간 <b>${tool.week}%</b><span class="wbar"><i style="width:${tool.week}%"></i></span></span>
+    </div>`;
+        $("panel").appendChild(col);
+        return col;
+      });
+
+      // 지금 t에서 각 그래프 형태의 불투명도(교차 페이드)
+      function typeOpacity(t) {
+        const o = {};
+        TYPES.forEach((ty, i) => {
+          const next = TYPES[i + 1];
+          const inP = i === 0 ? 1 : easeOutCubic(progress(t, ty.at, XFADE));
+          const outP = next ? easeInCubic(progress(t, next.at, XFADE)) : 0;
+          o[i] = inP * (1 - outP);
+        });
+        return o;
+      }
+
+      window.CARD = defineCard({
+        end: VERDICT_T + 600,
+        draw(t) {
+          const f = easeOutCubic(progress(t, FILL_AT, FILL_DUR));
+          fade($("mlabel"), t, 150);
+          fade($("menubar"), t, 150);
+          TOOLS.forEach((tool, i) => {
+            const v = tool.remain * f;
+            $(`mb${i}`).style.width = v + "%";
+            $(`mn${i}`).textContent = Math.round(v) + "%";
+          });
+          fade($("panel"), t, 300);
+          const op = typeOpacity(t);
+          const active = TYPES.reduce(
+            (cur, ty, i) => (t >= ty.at ? i : cur),
+            0,
+          );
+          $("tname")
+            .querySelectorAll("span")
+            .forEach((s) => {
+              s.style.opacity = op[s.dataset.i];
+            });
+          $("dots")
+            .querySelectorAll("i")
+            .forEach((d, k) =>
+              d.classList.toggle("on", k === TYPES[active].dot),
+            );
+          cols.forEach((col, i) => {
+            const tool = TOOLS[i];
+            const v = tool.remain * f;
+            const dial = col.querySelector('[data-k="dial"]');
+            dial.innerHTML =
+              dialSvg(tool, v) + `<div class="layer">${pctHtml(v)}</div>`;
+            const byKey = { dial: 0, bars: 0, spark: 0, big: 0 };
+            TYPES.forEach((ty, k) => {
+              byKey[ty.key] = Math.max(byKey[ty.key], op[k]);
+            });
+            col.querySelectorAll(".layer[data-k]").forEach((l) => {
+              l.style.opacity = byKey[l.dataset.k];
+            });
+          });
+          fade($("vhr"), t, VERDICT_T);
+          fade($("verdict"), t, VERDICT_T);
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="kit.css" />
+    <script src="kit.js"></script>
+    <style>
+      #photo { position: absolute; left: 20px; top: 44px; width: 140px; height: 108px; overflow: hidden; border: 1px solid var(--line); background: #cfcac0; }
+      #photo svg { position: absolute; left: 0; top: 0; }
+      #cap { position: absolute; left: 20px; top: 160px; width: 84px; height: 28px; }
+      #cap i { position: absolute; width: 6px; height: 6px; border-radius: 1px; border: 1px solid var(--line); }
+      #cap i.on { background: var(--accent); border-color: var(--accent); }
+      #cap i.bad { border-color: var(--p2); background: var(--p2); }
+      .row { position: absolute; left: 176px; right: 20px; height: 18px; font: 400 11px/18px var(--mono); white-space: nowrap; }
+      .row > * { position: absolute; top: 0; }
+      .row .u { left: 0; } .row .h { left: 60px; }
+      .row .conf { left: 104px; width: 56px; top: 6px; }
+      .row .n { right: 0; text-align: right; font-weight: 600; }
+      #tick { position: absolute; left: 313px; top: 62px; width: 1px; height: 80px; background: var(--muted); opacity: .5; }
+    </style>
+  </head>
+  <body>
+    <div id="stage">
+      <div id="input" class="input mono"></div>
+      <div id="lab" class="abs label" style="right: var(--pad); top: 18px">Synthetic Recapture</div>
+      <div id="grp">
+        <div id="photo">
+          <svg id="ph" width="140" height="108" viewBox="0 0 140 108">
+            <defs>
+              <filter id="nz" x="0" y="0" width="100%" height="100%">
+                <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7" />
+                <feColorMatrix type="matrix" values="0 0 0 0 0.35  0 0 0 0 0.35  0 0 0 0 0.35  0 0 0 1.6 -0.6" />
+              </filter>
+              <filter id="bl"><feGaussianBlur id="blur" stdDeviation="0.4" /></filter>
+              <pattern id="mo" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(11)">
+                <rect width="3" height="1" fill="#7a7468" />
+              </pattern>
+            </defs>
+            <g filter="url(#bl)">
+              <g transform="translate(70 54) rotate(-8) skewX(-6) translate(-70 -54)">
+                <rect x="14" y="8" width="112" height="92" fill="#f4f0e8" />
+                <text x="22" y="26" font-family="Pretendard Variable, Pretendard, sans-serif" font-weight="700" font-size="9" fill="#3a3a3a">CONFIDENTIAL REVIEW</text>
+                <g fill="#b5b1a8">
+                  <rect x="22" y="36" width="96" height="3" /><rect x="22" y="45" width="84" height="3" /><rect x="22" y="54" width="92" height="3" />
+                  <rect x="22" y="63" width="70" height="3" /><rect x="22" y="72" width="90" height="3" /><rect x="22" y="81" width="60" height="3" />
+                </g>
+              </g>
+            </g>
+            <rect width="140" height="108" fill="url(#mo)" id="moire" opacity="0.1" />
+            <rect width="140" height="108" filter="url(#nz)" id="noise" opacity="0.2" />
+          </svg>
+        </div>
+        <div id="cap"></div>
+        <div id="caplab" class="abs label" style="left: 112px; top: 166px">recovered</div>
+        <div id="head" class="abs label" style="left: 176px; top: 44px; width: 204px">
+          <span>User</span><span class="abs" style="left: 60px">Hamming</span><span class="abs" style="left: 104px; display:none">x</span>
+          <span class="abs" style="left: 128px">Confidence</span>
+        </div>
+        <div id="tick"></div>
+        <div id="rows"></div>
+        <div id="pol" class="abs label mono" style="left: 176px; top: 148px">max_hamming 0.10 · gap 8</div>
+        <div id="reason" class="abs" style="left: 176px; top: 170px"></div>
+      </div>
+      <div id="vhr" class="verdict-hr"></div>
+      <div id="verdict" class="verdict"><span id="vl"></span><span id="vc" class="chip"></span></div>
+    </div>
+    <script>
+      const CASES = [
+        { off: 0, input: "Suspect capture  Q80 / sigma 0.8", blur: 0.4, noise: 0.2, moire: 0.1,
+          flips: [11, 33], reason: ["accepted", "ok"],
+          top: [["user_003", 0.04, 92], ["user_071", 0.46, 8], ["user_018", 0.48, 4]],
+          left: "Attribution Decision · user_003", chip: ["Candidate accepted", "ok"], good: true },
+        { off: 4200, input: "Suspect capture  Q35 / sigma 2.0", blur: 1.5, noise: 0.42, moire: 0.2,
+          flips: [3, 9, 14, 22, 25, 31, 38, 41, 45], reason: ["best_hamming_above_threshold", "p2"],
+          top: [["user_003", 0.18, 64], ["user_071", 0.47, 6], ["user_018", 0.49, 2]],
+          left: "Attribution Decision · 지목하지 않음", chip: ["Abstained", "p2"], good: false },
+      ];
+      const N = 48, END = 7700, SWITCH = 4200;
+      const bit = (i) => ((i * 2654435761) >>> 7) & 1;
+
+      $("cap").innerHTML = Array.from({ length: N }, (_, i) =>
+        `<i style="left:${(i % 12) * 7}px;top:${Math.floor(i / 12) * 7}px"></i>`).join("");
+      const cells = $("cap").querySelectorAll("i");
+      $("rows").innerHTML = [0, 1, 2].map((k) =>
+        `<div class="row" id="r${k}" style="top:${64 + k * 26}px"><span class="u"></span><span class="h"></span>` +
+        `<span class="bar conf"><i></i></span><span class="n"></span></div>`).join("");
+
+      window.CARD = defineCard({
+        end: END,
+        draw(t) {
+          const ci = t >= SWITCH ? 1 : 0;
+          const c = CASES[ci];
+          const tl = t - c.off;
+          $("grp").style.opacity = ci === 0 ? 1 - easeInCubic(progress(t, SWITCH - 260, 200)) : 1;
+          fade($("input"), tl, 0, 240, Infinity);
+          $("input").textContent = c.input;
+          fade($("lab"), t, 100);
+          fade($("photo"), tl, 150);
+          $("blur").setAttribute("stdDeviation", c.blur);
+          $("noise").setAttribute("opacity", c.noise);
+          $("moire").setAttribute("opacity", c.moire);
+          // 복원 격자: 순서대로 채워지고, 등록 패턴과 다른 칸은 호박색
+          const nShow = Math.floor(progress(tl, 600, 900) * N);
+          cells.forEach((el, i) => {
+            const bad = c.flips.includes(i);
+            const b = bad ? 1 - bit(i) : bit(i);
+            const shown = i < nShow;
+            el.className = shown ? (bad ? "bad" : b ? "on" : "") : "";
+            el.style.opacity = shown ? 1 : 0.4;
+          });
+          fade($("cap"), tl, 450);
+          fade($("caplab"), tl, 450);
+          fade($("head"), tl, 1000);
+          fade($("tick"), tl, 1000);
+          fade($("pol"), tl, 1000);
+          c.top.forEach(([u, h, conf], k) => {
+            const r = $("r" + k), s = 1150 + k * 160;
+            fade(r, tl, s);
+            const v = count(tl, s, 700, 0, 1);
+            r.querySelector(".u").textContent = u;
+            const hh = r.querySelector(".h");
+            hh.textContent = (h * v).toFixed(2);
+            hh.style.color = k === 0 && h > 0.1 ? "var(--p2)" : "";
+            const fill = r.querySelector(".bar i");
+            fill.style.width = conf * v + "%";
+            fill.style.background = k === 0 ? (c.good ? "var(--ok)" : "var(--p2)") : "var(--lowc)";
+            const n = r.querySelector(".n");
+            n.textContent = Math.round(conf * v);
+            n.style.color = k === 0 ? (c.good ? "var(--ok)" : "var(--p2)") : "var(--muted)";
+          });
+          const rz = $("reason");
+          rz.innerHTML = `<span class="chip ${c.reason[1]}">${c.reason[0]}</span>`;
+          fade(rz, tl, 2300);
+          fade($("vhr"), t, 2500);
+          $("vl").textContent = c.left;
+          const vc = $("vc");
+          vc.textContent = c.chip[0];
+          vc.className = "chip " + c.chip[1];
+          fade($("verdict"), tl, 2500);
+          $("verdict").style.opacity *= $("grp").style.opacity;
+        },
+      });
+    </script>
+  </body>
+</html>

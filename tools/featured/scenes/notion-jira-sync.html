@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="kit.css" />
+    <script src="kit.js"></script>
+    <style>
+      .term .c { color: var(--ok); }
+      .term .u { color: var(--accent); }
+      .term .s, .term .m { color: var(--muted); }
+      .term b { font-weight: 600; }
+      .vwrap { position: absolute; inset: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="stage">
+      <div id="input" class="input mono"></div>
+      <div id="vhr" class="verdict-hr"></div>
+      <div id="v1" class="verdict">
+        <span>미리보기만 · 아직 아무것도 쓰지 않음</span><span class="chip gray">DRY-RUN</span>
+      </div>
+      <div id="v2" class="verdict">
+        <span>Jira 키를 Notion에 역기록</span><span class="chip ok">APPLY</span>
+      </div>
+    </div>
+    <script>
+      const CMD1 = "$ npm run sync -- --source fixture";
+      const CMD2 = "$ npm run sync:jira -- --apply";
+      const A_OUT = 5000; // 1막 퇴장
+      const B_CMD = 5400;
+      const END = 8700;
+
+      const ACT1 = [
+        '<b>[DRY-RUN] Jira 동기화 계획</b> — 총 5건',
+        '  (생성 2 / 업데이트 1 / 스킵 2)',
+        '  <span class="c">[CREATE]</span> 로그인 안정화 프로젝트',
+        '      └─ <span class="c">[CREATE]</span> 토큰 만료 시 로그인으로 1회만 이동',
+        '      └─ <span class="u">[UPDATE]</span> 세션 만료 회귀 테스트 추가',
+        '  <span class="s">[SKIP  ]</span> 개인 학습 정리',
+        '  <span class="s">[SKIP  ]</span> 결제 검증 프로젝트',
+        '      <span class="m">Jira 동기화=false → 안전장치로 제외</span>',
+        '<span class="m">주간보고 미리보기</span>  "주간보고 2026-W25" — 1건',
+      ];
+      const ACT2 = [
+        '<b>Jira 동기화</b> — source=notion, mode=APPLY',
+        '  <span class="c">✓</span> 상위 생성: PROJ-202 ← "로그인 안정화 프로젝트"',
+        '    <span class="c">✓</span> 하위 생성: PROJ-203 ← "토큰 만료 시 로그인으로 1회만 이동"',
+        '    <span class="c">✓</span> 하위 업데이트: PROJ-201 ← "세션 만료 회귀 테스트 추가"',
+        '<b class="c">[APPLY] 완료</b> — 성공 3 / 실패 0 / 스킵 2',
+      ];
+      const mk = (rows, top, gap) =>
+        rows.map((h, i) => {
+          const d = document.createElement("div");
+          d.className = "term";
+          d.style.top = top + i * 16 + (gap && i >= gap ? 0 : 0) + "px";
+          d.innerHTML = h;
+          $("stage").insertBefore(d, $("vhr"));
+          return d;
+        });
+      const L1 = mk(ACT1, 46);
+      const L2 = mk(ACT2, 46);
+
+      window.CARD = defineCard({
+        end: END,
+        draw(t) {
+          if (t < A_OUT) typeInto($("input"), CMD1, t, 300, 40, A_OUT);
+          else typeInto($("input"), CMD2, t, B_CMD, 40);
+          $("input").style.opacity = t < A_OUT - 180 ? 1 : (t < A_OUT ? 1 - easeInCubic(progress(t, A_OUT - 180, 180)) : easeOutCubic(progress(t, B_CMD - 200, 200)));
+
+          L1.forEach((el, i) => fade(el, t, 1300 + i * 230, 200, A_OUT - 180, 180, 4));
+          L2.forEach((el, i) => fade(el, t, 6300 + i * 340, 200, Infinity, 180, 4));
+
+          const VA = 3700, VB = 7900;
+          fade($("vhr"), t, VA);
+          fade($("v1"), t, VA, 240, A_OUT - 180);
+          fade($("v2"), t, VB);
+        },
+      });
+    </script>
+  </body>
+</html>

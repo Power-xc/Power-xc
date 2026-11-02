@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="kit.css" />
+    <script src="kit.js"></script>
+    <style>
+      .cell { position: absolute; width: 42px; height: 36px; border: 1px solid var(--line); }
+      .dot { position: absolute; width: 4px; height: 4px; border-radius: 50%; background: var(--accent); }
+      .big { position: absolute; font: 600 24px/28px var(--mono); white-space: nowrap; }
+      .big small { font: 500 12px/28px var(--ui); margin-left: 2px; }
+      .row { position: absolute; left: var(--pad); right: var(--pad); height: 22px; display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+      .row .nm { width: 112px; font: 600 11.5px/22px var(--mono); }
+      .row .mk { width: 14px; font: 700 14px/22px var(--ui); }
+      .row .dt { font: 400 11.5px/22px var(--ui); color: var(--muted); }
+    </style>
+  </head>
+  <body>
+    <div id="stage">
+      <div id="in1" class="input mono"></div>
+      <div id="in2" class="input mono"></div>
+
+      <div id="lbl" class="abs label" style="left: 20px; top: 46px">100만 레코드 → 셀 12개</div>
+      <div id="grid"></div>
+      <div id="adp" class="abs label mono" style="left: 20px; top: 178px; font-size: 11px">Adapter/Model: mock/mock-model</div>
+      <div id="n1" class="big" style="left: 232px; top: 62px"></div>
+      <div id="n2" class="abs" style="left: 232px; top: 96px; font: 500 12.5px/20px var(--ui)">× 문항 30개<br />× 반복 3회</div>
+      <div id="n3" class="big" style="left: 232px; top: 148px"></div>
+
+      <div id="rows"></div>
+
+      <div id="vhr" class="verdict-hr"></div>
+      <div id="v1" class="verdict"><span>실행 완료 · 응답 11790건</span><span class="chip gray">mock</span></div>
+      <div id="v2" class="verdict"><span>검증 실패 → 결과 전체 폐기</span><span class="chip p1">DISCARD</span></div>
+    </div>
+    <script>
+      const CMD1 = "power-persona-sim run survey.yaml --no-dry-run";
+      const CMD2 = "power-persona-sim validate survey.yaml";
+      const SIZES = [14, 9, 12, 10, 11, 8, 13, 9, 12, 10, 11, 12]; // 합 131
+      const SWITCH = 5000;
+      const CHECKS = [
+        { nm: "distribution", ok: false, dt: "χ²=23.52 · p=0.0149" },
+        { nm: "known_truth", ok: false, dt: "재현율 A4=0% · 임계치 50%" },
+        { nm: "self_consistency", ok: false, dt: "제외 문항 ['E4']" },
+        { nm: "cross_model", ok: true, dt: "모델 1개 · 적용 불가" },
+      ];
+      const rnd = (n) => { const x = Math.sin(n * 127.1 + 311.7) * 43758.5453; return x - Math.floor(x); };
+
+      // 셀 12개(4×3)와 점 131개: 슬롯 4×4 중 시드로 고른 자리
+      const dots = [];
+      let seq = 0;
+      SIZES.forEach((size, c) => {
+        const cx = 20 + (c % 4) * 44, cy = 62 + Math.floor(c / 4) * 38;
+        const cell = document.createElement("div");
+        cell.className = "cell"; cell.style.left = cx + "px"; cell.style.top = cy + "px";
+        $("grid").appendChild(cell);
+        const slots = Array.from({ length: 16 }, (_, i) => i).sort((a, b) => rnd(c * 40 + a) - rnd(c * 40 + b)).slice(0, size);
+        slots.forEach((s) => {
+          const d = document.createElement("i");
+          d.className = "dot";
+          d.style.left = cx + 4 + (s % 4) * 9 + "px";
+          d.style.top = cy + 3 + Math.floor(s / 4) * 8 + "px";
+          $("grid").appendChild(d);
+          dots.push({ el: d, at: 1700 + rnd(seq++ + 900) * 1500 });
+        });
+      });
+
+      $("rows").innerHTML = CHECKS.map((c, i) =>
+        `<div class="row" id="r${i}" style="top:${52 + i * 34}px"><span class="nm">${c.nm}</span><span class="mk ${c.ok ? "okc" : "p1c"}" id="m${i}">${c.ok ? "✓" : "✗"}</span><span class="dt">${c.dt}</span></div>`).join("");
+
+      window.CARD = defineCard({
+        end: 8900,
+        draw(t) {
+          // 1막
+          typeInto($("in1"), CMD1, t, 200, 40);
+          $("in1").style.opacity = 1 - easeInCubic(progress(t, SWITCH, 180));
+          const out = SWITCH;
+          fade($("lbl"), t, 1300, 240, out);
+          fade($("adp"), t, 1300, 240, out);
+          $("grid").style.opacity = 1 - easeInCubic(progress(t, out, 180));
+          $("grid").querySelectorAll(".cell").forEach((c) => (c.style.opacity = easeOutCubic(progress(t, 1300, 300))));
+          dots.forEach((d) => { d.el.style.opacity = t >= d.at ? 1 : 0; });
+          fade($("n1"), t, 2600, 240, out);
+          $("n1").innerHTML = Math.round(count(t, 2600, 900, 0, 131)) + "<small>명</small>";
+          fade($("n2"), t, 3300, 240, out);
+          fade($("n3"), t, 3800, 240, out);
+          $("n3").innerHTML = "응답 " + Math.round(count(t, 3800, 800, 0, 11790)) + "<small>건</small>";
+          fade($("v1"), t, 4400, 240, out);
+          // 2막
+          const T2 = SWITCH + 200;
+          typeInto($("in2"), CMD2, t, T2, 40);
+          $("in2").style.opacity = easeOutCubic(progress(t, T2, 100));
+          CHECKS.forEach((c, i) => {
+            const at = 5900 + i * 600;
+            fade($(`r${i}`), t, at);
+            $(`m${i}`).style.opacity = easeOutCubic(progress(t, at + 300, 150));
+          });
+          fade($("v2"), t, 8300);
+          fade($("vhr"), t, 4400);
+        },
+      });
+    </script>
+  </body>
+</html>
