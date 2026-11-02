@@ -25,6 +25,18 @@
 
 <table>
 <tr>
+<td colspan="2" valign="top">
+<a href="https://github.com/Power-xc/power-ux-harness"><b>power-ux-harness</b></a><br />
+<sub>AI 코딩 에이전트가 시니어 프로덕트 디자이너의 절차로 UX를 설계하고 검토하게 하는 스킬 10개. 기획서·링크만 넣으면 자료를 조사하고 출처 붙은 합성 페르소나로 후보안을 미리 걸러 낸 뒤(ux-simulate), 흐름·화면 설계서·문구·리뷰·접근성(WCAG 2.2·KWCAG 2.2)·기만 패턴(공정위 가이드라인)·지표까지 같은 판정으로 잇습니다.</sub><br /><br />
+<a href="https://github.com/Power-xc/power-ux-harness"><picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Power-xc/power-ux-harness/main/assets/demos/hero-dark.gif" />
+<img src="https://raw.githubusercontent.com/Power-xc/power-ux-harness/main/assets/demos/hero-light.gif" width="600" alt="구독 해지 화면 요청이 ux-simulate부터 ux-metrics까지 9단계를 지나며 단계마다 판정을 남기는 데모" />
+</picture></a><br />
+<img src="https://img.shields.io/badge/Agent_Skills-111111?style=flat-square" alt="Agent Skills" /> <img src="https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" /> <img src="https://img.shields.io/badge/UX_Research-444444?style=flat-square" alt="UX Research" /> <img src="https://img.shields.io/badge/WCAG_2.2-444444?style=flat-square" alt="WCAG 2.2" /><br />
+<sub><a href="https://github.com/Power-xc/power-ux-harness">Repo</a> · <a href="https://power-ux-harness-guide.vercel.app">Skill Guide</a></sub>
+</td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 <a href="https://github.com/Power-xc/usage-gauge"><b>usage-gauge</b></a><br />
 <sub>Claude·Codex 등 AI 코딩 도구의 남은 사용량을 홍채 다이얼과 스모크 유리 패널로 보여주는 macOS 게이지·메뉴바. 초기화 시각이 지나면 바로 반영하고, 뒤 배경 밝기에 맞춰 유리 진하기를 조절합니다.</sub><br /><br />
