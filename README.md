@@ -29,10 +29,10 @@
 <a href="https://github.com/Power-xc/power-ux-harness"><b>power-ux-harness</b></a><br />
 <a href="https://github.com/Power-xc/power-ux-harness"><picture>
 <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/power-ux-harness-dark.gif" />
-<img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/power-ux-harness-light.gif" width="400" alt="요청 한 줄마다 맞는 UX 스킬이 켜지고, 스킬 10개가 차례로 자기 예시를 고치기 전에서 고친 후로 바꾸는 데모" />
+<img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/power-ux-harness-light.gif" width="400" alt="요청 한 줄마다 맞는 UX 스킬이 켜지고, 스킬 11개가 차례로 자기 예시를 고치기 전에서 고친 후로 바꾸는 데모. 첫 장면은 처음 보내는 계좌로 큰돈을 보낼 때만 받는 분 이름을 크게 보이고 확인 두 줄을 더하는 송금 화면" />
 </picture></a><br />
-<sub>AI 코딩 에이전트가 시니어 프로덕트 디자이너의 절차로 UX를 설계하고 검토하게 하는 스킬 10개. 출처 붙은 합성 페르소나 시뮬레이션(ux-simulate)부터 흐름·화면 설계서·문구·리뷰·접근성(WCAG 2.2·KWCAG 2.2)·기만 패턴(공정위 가이드라인)·지표까지 같은 판정으로 잇습니다.</sub><br /><br />
-<img src="https://img.shields.io/badge/Agent_Skills-111111?style=flat-square" alt="Agent Skills" /> <img src="https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" /> <img src="https://img.shields.io/badge/UX_Research-444444?style=flat-square" alt="UX Research" /> <img src="https://img.shields.io/badge/WCAG_2.2-444444?style=flat-square" alt="WCAG 2.2" /><br />
+<sub>같은 기능도 서비스마다 정답이 다르다. AI 코딩 에이전트가 규모·타깃·나이·상황부터 읽고 시니어 프로덕트 디자이너의 절차로 UX를 설계·검토하게 하는 스킬 11개. 비슷한 서비스 사례를 맥락에 맞춰 가져오는 벤치마킹(ux-benchmark)과 합성 페르소나 시뮬레이션부터 흐름·화면 설계서·문구·리뷰·접근성·기만 패턴·지표까지 같은 판정으로 잇습니다.</sub><br /><br />
+<img src="https://img.shields.io/badge/Agent_Skills-111111?style=flat-square" alt="Agent Skills" /> <img src="https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" /> <img src="https://img.shields.io/badge/UX_Benchmark-444444?style=flat-square" alt="UX Benchmark" /> <img src="https://img.shields.io/badge/WCAG_2.2-444444?style=flat-square" alt="WCAG 2.2" /><br />
 <sub><a href="https://github.com/Power-xc/power-ux-harness">Repo</a> · <a href="https://power-ux-harness-guide.vercel.app">Skill Guide</a></sub>
 </td>
 <td width="50%" valign="top">

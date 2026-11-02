@@ -8,8 +8,8 @@
       .row {
         position: absolute;
         left: 32px;
-        height: 15px;
-        font: 400 11px/15px var(--mono);
+        height: 14px;
+        font: 400 11px/14px var(--mono);
         white-space: nowrap;
       }
       .dot {
@@ -23,7 +23,7 @@
         position: absolute;
         left: 13px;
         width: 134px;
-        height: 15px;
+        height: 14px;
         border: 1px solid var(--accent);
         border-radius: 8px;
       }
@@ -93,9 +93,9 @@
         S = 1650,
         BEF = 380,
         SW = 850,
-        N = 10;
-      const ROW0 = 45,
-        ROWH = 15;
+        N = 11;
+      const ROW0 = 42,
+        ROWH = 14;
       const op = (u, s, d = 160) => easeOutCubic(progress(u, s, d));
       const A = (x, y, w, h, style, html = "") =>
         `<div style="position:absolute;left:${x}px;top:${y}px;${w != null ? `width:${w}px;` : ""}${h != null ? `height:${h}px;` : ""}${style}">${html}</div>`;
@@ -141,6 +141,45 @@
         A(x, y, w, h, `border-radius:3px;background:${c}`);
 
       const SK = [
+        {
+          n: "ux-benchmark",
+          q: "60대 사용자가 늘었는데 송금 화면 어떻게 바꿀까",
+          v: "Context → 위험 신호별 안",
+          chip: "나이 대신 위험 신호",
+          cc: "accent",
+          bf: (b) =>
+            tx(0, 0, 176, "받는 분", `color:var(--muted);font-size:10.5px;opacity:${op(b, 0)}`) +
+            A(0, 14, 176, 18, `font:500 12.5px/18px var(--ui);opacity:${op(b, 0)}`, "김하늘") +
+            A(0, 38, 176, 18, `font:700 13px/18px var(--mono);opacity:${op(b, 60)}`, "1,200,000원") +
+            tx(0, 60, 176, "모두에게 같은 확인 화면", `color:var(--p1);opacity:${op(b, 160)}`) +
+            btn(0, 84, 176, "보내기", "var(--fg)", op(b, 100)),
+          af: (a) => {
+            const fs = lerp(12.5, 17, easeOutCubic(progress(a, 0, 260)));
+            const row = (y, t, s) =>
+              A(
+                0,
+                y,
+                176,
+                15,
+                `display:flex;align-items:center;gap:5px;font:500 11px/15px var(--ui);white-space:nowrap;opacity:${op(a, s)}`,
+                `<span style="color:var(--accent);display:inline-flex">${CHECK}</span>${t}`,
+              );
+            return (
+              A(0, 0, 176, 22, `font:700 ${fs.toFixed(1)}px/22px var(--ui)`, "김하늘") +
+              A(
+                0,
+                25,
+                null,
+                16,
+                `border:1px solid var(--accent);color:var(--accent);border-radius:999px;padding:0 6px;font:600 10.5px/14px var(--ui);white-space:nowrap;opacity:${op(a, 180)}`,
+                "처음 보내는 계좌",
+              ) +
+              row(48, "직접 아는 분이에요", 300) +
+              row(65, "급한 송금 요청이 아니에요", 380) +
+              tx(0, 88, 176, "30분 뒤 도착 · 그 전엔 취소", `color:var(--ok);font-size:11px;opacity:${op(a, 470)}`)
+            );
+          },
+        },
         {
           n: "ux-simulate",
           q: "기획서랑 링크 줄 테니 어떤 UX가 맞을지 봐 줘",
@@ -662,7 +701,7 @@
       // 스킬 목록
       $("list").innerHTML = SK.map(
         (s, i) =>
-          `<i class="dot" id="d${i}" style="top:${ROW0 + i * ROWH + 4.5}px"></i><span class="row" id="r${i}" style="top:${ROW0 + i * ROWH}px">${s.n}</span>`,
+          `<i class="dot" id="d${i}" style="top:${ROW0 + i * ROWH + 4}px"></i><span class="row" id="r${i}" style="top:${ROW0 + i * ROWH}px">${s.n}</span>`,
       ).join("");
 
       const mixc = (a, b, p) =>
