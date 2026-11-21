@@ -24,11 +24,11 @@
 
 | 층 | 구성 |
 | --- | --- |
-| **작업 환경** | Orca ADE (개발 작업 공간·멀티에이전트) · Hermes Agent (마케팅 자동화·콘텐츠 실행) · Notion + Obsidian (지식·프로젝트·자산 관리) |
-| **AI 하네스** (Execution Orchestrator) | Claude Code (설계·구현·콘텐츠) · Codex (개발·검증·테스트) · Kiro (인프라·클라우드 AWS) |
-| **연결 생태계** | GitHub · Databricks · Supabase · Slack · AWS · Vercel |
+| **작업 환경** | <img src="assets/logos/orca.png" height="18" alt="" /> Orca ADE (개발 작업 공간·멀티에이전트) · <img src="assets/logos/hermes.png" height="18" alt="" /> Hermes Agent (마케팅 자동화·콘텐츠 실행) · <img src="https://cdn.simpleicons.org/notion/8B949E" height="18" alt="" /> <img src="https://cdn.simpleicons.org/obsidian/7C3AED" height="18" alt="" /> Notion + Obsidian (지식·프로젝트·자산 관리) |
+| **AI 하네스** (Execution Orchestrator) | <img src="https://cdn.simpleicons.org/claude/D97757" height="18" alt="" /> Claude Code (설계·구현·콘텐츠) · <img src="assets/logos/codex.png" height="18" alt="" /> Codex (개발·검증·테스트) · <img src="assets/logos/kiro.png" height="18" alt="" /> Kiro (인프라·클라우드 AWS) |
+| **연결 생태계** | <img src="https://cdn.simpleicons.org/github/8B949E" height="18" alt="" /> GitHub · <img src="https://cdn.simpleicons.org/databricks/FF3621" height="18" alt="" /> Databricks · <img src="https://cdn.simpleicons.org/supabase/3FCF8E" height="18" alt="" /> Supabase · <img src="assets/logos/slack.png" height="18" alt="" /> Slack · <img src="assets/logos/aws.png" height="18" alt="" /> AWS · <img src="https://cdn.simpleicons.org/vercel/8B949E" height="18" alt="" /> Vercel |
 | **하네스 모음** | 개발·마케팅·학습·분석·운영 하네스. 바로 쓰는 실행 템플릿으로 반복 작업을 빠르고 안전하게 |
-| **인프라** | NVIDIA H100 클라우드 GPU로 대규모 학습·실험 |
+| **인프라** | <img src="https://cdn.simpleicons.org/nvidia/76B900" height="18" alt="" /> NVIDIA H100 클라우드 GPU로 대규모 학습·실험 |
 
 ### 단계별로 만든 것
 
