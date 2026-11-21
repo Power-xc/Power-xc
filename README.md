@@ -14,6 +14,45 @@
 
 🛠 **Now** — 피부·두피·다이어트 기록부터 성분 대조, 업체 맵, 비슷한 케이스 커뮤니티까지 잇는 케어 서비스 [모하우](https://www.mohow.co.kr)를 운영하며, 직접 학습한 정수리(탈모) 세그멘테이션 모델을 얹고 있습니다.
 
+## <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/mascot/11_laptop.png" height="32" alt="" /> AI 개발 워크플로우 2.0
+
+**기획부터 학습·배포·운영·마케팅까지, 하나로 연결된 AI 개발 시스템**
+
+<img src="assets/ai-workflow-2.0.png" width="100%" alt="AI 개발 워크플로우 2.0: 기획·리서치, 디자인, 개발·구현, 모델 개발·학습, 검증·QA, 배포·운영, 성장·마케팅 7단계 위에 작업 환경, AI 하네스, 연결 생태계, 하네스 모음, NVIDIA H100 인프라가 놓인 구조도" />
+
+기획 → 디자인 → 개발·구현 → 모델 개발·학습 → 검증·QA → 배포·운영 → 성장·마케팅. 단계마다 도구를 바꾸지 않고, 한 AI 하네스가 여러 AI와 도구를 조율해 같은 품질 기준으로 끝까지 갑니다.
+
+| 층 | 구성 |
+| --- | --- |
+| **작업 환경** | <img src="assets/logos/orca.png" height="18" alt="" /> Orca ADE (개발 작업 공간·멀티에이전트) · <img src="assets/logos/hermes.png" height="18" alt="" /> Hermes Agent (마케팅 자동화·콘텐츠 실행) · <img src="https://cdn.simpleicons.org/notion/8B949E" height="18" alt="" /> <img src="https://cdn.simpleicons.org/obsidian/7C3AED" height="18" alt="" /> Notion + Obsidian (지식·프로젝트·자산 관리) |
+| **AI 하네스** (Execution Orchestrator) | <img src="https://cdn.simpleicons.org/claude/D97757" height="18" alt="" /> Claude Code (설계·구현·콘텐츠) · <img src="assets/logos/codex.png" height="18" alt="" /> Codex (개발·검증·테스트) · <img src="assets/logos/kiro.png" height="18" alt="" /> Kiro (인프라·클라우드 AWS) |
+| **연결 생태계** | <img src="https://cdn.simpleicons.org/github/8B949E" height="18" alt="" /> GitHub · <img src="https://cdn.simpleicons.org/databricks/FF3621" height="18" alt="" /> Databricks · <img src="https://cdn.simpleicons.org/supabase/3FCF8E" height="18" alt="" /> Supabase · <img src="assets/logos/slack.png" height="18" alt="" /> Slack · <img src="assets/logos/aws.png" height="18" alt="" /> AWS · <img src="https://cdn.simpleicons.org/vercel/8B949E" height="18" alt="" /> Vercel |
+| **하네스 모음** | 개발·마케팅·학습·분석·운영 하네스. 바로 쓰는 실행 템플릿으로 반복 작업을 빠르고 안전하게 |
+| **인프라** | <img src="https://cdn.simpleicons.org/nvidia/76B900" height="18" alt="" /> NVIDIA H100 클라우드 GPU로 대규모 학습·실험 |
+
+### 단계별로 만든 것
+
+| 단계 | 저장소 |
+| --- | --- |
+| 기획·리서치 | [power-persona-sim](https://github.com/Power-xc/power-persona-sim) · Nemotron Personas Korea 기반 소비자 조사 시뮬레이터 |
+| 디자인 | [power-ux-harness](https://github.com/Power-xc/power-ux-harness) · UX 설계·검토 에이전트 스킬 11종<br />[ai-story-ux](https://github.com/Power-xc/ai-story-ux) · 뤼튼 PD 과제 프로토타입 |
+| 개발·구현 | [relay](https://github.com/Power-xc/relay) · AI 업무요청 서비스<br />[usage-gauge](https://github.com/Power-xc/usage-gauge) · AI 사용량 게이지 (macOS·Windows)<br />[notion-jira-sync](https://github.com/Power-xc/notion-jira-sync) · Notion → Jira·Confluence CLI |
+| 모델 개발·학습 | 직접 학습한 세그멘테이션 모델 등은 비공개 작업이라 저장소를 열지 않았습니다 |
+| 검증·QA | [power-sec-harness](https://github.com/Power-xc/power-sec-harness) · 출시 전 보안 공격·감사 하네스 |
+| 배포·운영 | Vercel · AWS · Supabase로 운영 (공개 저장소 없음) |
+| 성장·마케팅·분석 | [ig-reach-os](https://github.com/Power-xc/ig-reach-os) · 정책 준수형 인스타그램 마케팅 자동화<br />[ux-measure-lab](https://github.com/Power-xc/ux-measure-lab) · UX 측정·실험 하네스 |
+
+<details>
+<summary>그 밖의 공개 저장소 — 커리어 · 연구 · 학습</summary>
+
+| 분류 | 저장소 |
+| --- | --- |
+| 커리어 | [career-agent-kit](https://github.com/Power-xc/career-agent-kit) · 딥리서치 → 맞춤 이력서 → 심사 시뮬레이션 |
+| 연구 | [trading-rule-screener](https://github.com/Power-xc/trading-rule-screener) · 트레이딩 규칙 33개 기계 검증<br />[nirguard](https://github.com/Power-xc/nirguard) · 포렌식 워터마킹 검증 랩 |
+| 학습 | [aws-saa-cert-quiz](https://github.com/Power-xc/aws-saa-cert-quiz) · AWS 자격증 문제은행<br />[databricks-cert-quiz](https://github.com/Power-xc/databricks-cert-quiz) · Databricks 자격증 문제은행<br />[architect-exam-cbt](https://github.com/Power-xc/architect-exam-cbt) · 건축기사 필기 CBT<br />[huddy](https://github.com/Power-xc/huddy) · 영어 발표 스피킹 네비게이터 |
+
+</details>
+
 ## <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/mascot/05_happy.png" height="32" alt="" /> About Me
 
 - AI 에이전트와 자동화 워크플로를 설계해 아이디어를 동작하는 제품으로 빠르게 만듭니다.
