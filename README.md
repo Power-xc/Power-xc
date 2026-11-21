@@ -8,52 +8,17 @@
 <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/mascot/title-bar.svg?v=3" width="330" alt="Product/UX Designer · AI Builder · Researcher" />
 
 **Senior Product Designer (AI · B2B) who prototypes in code**  
-복잡한 AI·B2B 제품을 사용자가 이해하고 실행할 수 있는 경험으로 설계하고, 기획부터 배포까지 직접 만들어 검증합니다.
+복잡한 AI·B2B 제품을 사용자가 이해하고 실행할 수 있는 경험으로 설계하고, 기획부터 배포까지 직접 만들어 검증합니다.  
+기획·리서치 → 디자인 → 개발·구현 → 모델 개발·학습 → 검증·QA → 배포·운영 → 성장·마케팅을 하나의 AI 하네스로 잇습니다.
 
 <a href="https://www.linkedin.com/in/kangkeunpark/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a> <a href="mailto:pkk062300@naver.com"><img src="https://img.shields.io/badge/Email-1A7F37?style=flat-square" alt="Email" /></a>
 
 🛠 **Now** — 피부·두피·다이어트 기록부터 성분 대조, 업체 맵, 비슷한 케이스 커뮤니티까지 잇는 케어 서비스 [모하우](https://www.mohow.co.kr)를 운영하며, 직접 학습한 정수리(탈모) 세그멘테이션 모델을 얹고 있습니다.
 
-## <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/mascot/11_laptop.png" height="32" alt="" /> AI 개발 워크플로우 2.0
-
-**기획부터 학습·배포·운영·마케팅까지, 하나로 연결된 AI 개발 시스템**
-
-기획 → 디자인 → 개발·구현 → 모델 개발·학습 → 검증·QA → 배포·운영 → 성장·마케팅. 단계마다 도구를 바꾸지 않고, 한 AI 하네스가 여러 AI와 도구를 조율해 같은 품질 기준으로 끝까지 갑니다.
-
-| 층 | 구성 |
-| --- | --- |
-| **작업 환경** | Orca ADE (개발 작업 공간·멀티에이전트) · Hermes Agent (마케팅 자동화·콘텐츠 실행) · <img src="https://cdn.simpleicons.org/notion/8B949E" height="18" alt="" /> <img src="https://cdn.simpleicons.org/obsidian/7C3AED" height="18" alt="" /> Notion + Obsidian (지식·프로젝트·자산 관리) |
-| **AI 하네스** (Execution Orchestrator) | <img src="https://cdn.simpleicons.org/claude/D97757" height="18" alt="" /> Claude Code (설계·구현·콘텐츠) · Codex (개발·검증·테스트) · Kiro (인프라·클라우드 AWS) |
-| **연결 생태계** | <img src="https://cdn.simpleicons.org/github/8B949E" height="18" alt="" /> GitHub · <img src="https://cdn.simpleicons.org/databricks/FF3621" height="18" alt="" /> Databricks · <img src="https://cdn.simpleicons.org/supabase/3FCF8E" height="18" alt="" /> Supabase · Slack · AWS · <img src="https://cdn.simpleicons.org/vercel/8B949E" height="18" alt="" /> Vercel |
-| **하네스 모음** | 개발·마케팅·학습·분석·운영 하네스. 바로 쓰는 실행 템플릿으로 반복 작업을 빠르고 안전하게 |
-| **인프라** | <img src="https://cdn.simpleicons.org/nvidia/76B900" height="18" alt="" /> NVIDIA H100 클라우드 GPU로 대규모 학습·실험 |
-
-### 단계별로 만든 것
-
-| 단계 | 저장소 |
-| --- | --- |
-| 기획·리서치 | [power-persona-sim](https://github.com/Power-xc/power-persona-sim) · Nemotron Personas Korea 기반 소비자 조사 시뮬레이터 |
-| 디자인 | [power-ux-harness](https://github.com/Power-xc/power-ux-harness) · UX 설계·검토 에이전트 스킬 11종<br />[ai-story-ux](https://github.com/Power-xc/ai-story-ux) · 뤼튼 PD 과제 프로토타입 |
-| 개발·구현 | [relay](https://github.com/Power-xc/relay) · AI 업무요청 서비스<br />[usage-gauge](https://github.com/Power-xc/usage-gauge) · AI 사용량 게이지 (macOS·Windows)<br />[notion-jira-sync](https://github.com/Power-xc/notion-jira-sync) · Notion → Jira·Confluence CLI |
-| 모델 개발·학습 | 직접 학습한 세그멘테이션 모델 등은 비공개 작업이라 저장소를 열지 않았습니다 |
-| 검증·QA | [power-sec-harness](https://github.com/Power-xc/power-sec-harness) · 출시 전 보안 공격·감사 하네스 |
-| 배포·운영 | Vercel · AWS · Supabase로 운영 (공개 저장소 없음) |
-| 성장·마케팅·분석 | [ig-reach-os](https://github.com/Power-xc/ig-reach-os) · 정책 준수형 인스타그램 마케팅 자동화<br />[ux-measure-lab](https://github.com/Power-xc/ux-measure-lab) · UX 측정·실험 하네스 |
-
-<details>
-<summary>그 밖의 공개 저장소 — 커리어 · 연구 · 학습</summary>
-
-| 분류 | 저장소 |
-| --- | --- |
-| 커리어 | [career-agent-kit](https://github.com/Power-xc/career-agent-kit) · 딥리서치 → 맞춤 이력서 → 심사 시뮬레이션 |
-| 연구 | [trading-rule-screener](https://github.com/Power-xc/trading-rule-screener) · 트레이딩 규칙 33개 기계 검증<br />[nirguard](https://github.com/Power-xc/nirguard) · 포렌식 워터마킹 검증 랩 |
-| 학습 | [aws-saa-cert-quiz](https://github.com/Power-xc/aws-saa-cert-quiz) · AWS 자격증 문제은행<br />[databricks-cert-quiz](https://github.com/Power-xc/databricks-cert-quiz) · Databricks 자격증 문제은행<br />[architect-exam-cbt](https://github.com/Power-xc/architect-exam-cbt) · 건축기사 필기 CBT<br />[huddy](https://github.com/Power-xc/huddy) · 영어 발표 스피킹 네비게이터 |
-
-</details>
-
 ## <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/mascot/05_happy.png" height="32" alt="" /> About Me
 
 - AI 에이전트와 자동화 워크플로를 설계해 아이디어를 동작하는 제품으로 빠르게 만듭니다.
+- 일의 단계마다 하네스(개발·마케팅·학습·분석·운영)를 두고, Claude Code·Codex·Kiro로 돌려 한 흐름으로 잇습니다.
 - 사용자가 이해하고 실행할 수 있는 경험을 기준으로 AI의 역할과 범위를 정합니다.
 - 문제를 충분히 정의하고, 제약과 리소스를 고려해 우선순위 높은 가설을 데이터로 검증합니다.
 - 새로운 기술의 가능성을 직접 실험하고 검증합니다.
@@ -63,30 +28,7 @@
 <table>
 <tr>
 <td width="50%" valign="top">
-<a href="https://github.com/Power-xc/power-ux-harness"><b>power-ux-harness</b></a><br />
-<a href="https://github.com/Power-xc/power-ux-harness"><picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/power-ux-harness-dark.gif" />
-<img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/power-ux-harness-light.gif" width="400" alt="요청 한 줄마다 맞는 UX 스킬이 켜지고, 스킬 11개가 차례로 자기 예시를 고치기 전에서 고친 후로 바꾸는 데모. 첫 장면은 처음 보내는 계좌로 큰돈을 보낼 때만 받는 분 이름을 크게 보이고 확인 두 줄을 더하는 송금 화면" />
-</picture></a><br />
-<sub>같은 기능도 서비스마다 정답이 다르다. AI 코딩 에이전트가 규모·타깃·나이·상황부터 읽고 시니어 프로덕트 디자이너의 절차로 UX를 설계·검토하게 하는 스킬 11개. 비슷한 서비스 사례를 맥락에 맞춰 가져오는 벤치마킹(ux-benchmark)과 합성 페르소나 시뮬레이션부터 흐름·화면 설계서·문구·리뷰·접근성·기만 패턴·지표까지 같은 판정으로 잇습니다.</sub><br /><br />
-<img src="https://img.shields.io/badge/Agent_Skills-111111?style=flat-square" alt="Agent Skills" /> <img src="https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" /> <img src="https://img.shields.io/badge/UX_Benchmark-444444?style=flat-square" alt="UX Benchmark" /> <img src="https://img.shields.io/badge/WCAG_2.2-444444?style=flat-square" alt="WCAG 2.2" /><br />
-<sub><a href="https://github.com/Power-xc/power-ux-harness">Repo</a> · <a href="https://power-ux-harness-guide.vercel.app">Skill Guide</a></sub>
-</td>
-<td width="50%" valign="top">
-<a href="https://github.com/Power-xc/usage-gauge"><b>usage-gauge</b></a><br />
-<a href="https://github.com/Power-xc/usage-gauge"><picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/usage-gauge-dark.gif" />
-<img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/usage-gauge-light.gif" width="400" alt="메뉴바와 패널의 남은 사용량이 차오르고, 그래프가 다이얼·바·스파크 바·숫자로 바뀐 뒤 소진 예측이 뜨는 데모" />
-</picture></a><br />
-<sub>쓰는 모든 AI의 남은 한도를, 언제 바닥나는지까지. Claude·Codex 등 100여 개 서비스의 남은 사용량과 초기화 시각을 화면 위 게이지와 메뉴바에 띄우고, 그래프 12종·스타일 3종 중에서 고릅니다. macOS·Windows.</sub><br /><br />
-<img src="https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white" alt="Swift" /> <img src="https://img.shields.io/badge/SwiftUI-0D96F6?style=flat-square&logo=swift&logoColor=white" alt="SwiftUI" /> <img src="https://img.shields.io/badge/Tauri-24C8D8?style=flat-square&logo=tauri&logoColor=white" alt="Tauri" /> <img src="https://img.shields.io/badge/macOS_%C2%B7_Windows-444444?style=flat-square" alt="macOS · Windows" /><br />
-<sub><a href="https://github.com/Power-xc/usage-gauge">Repo</a> · <a href="https://github.com/Power-xc/usage-gauge/releases/latest">Download</a></sub>
-</td>
-</tr>
-<tr></tr>
-<tr>
-<td width="50%" valign="top">
-<a href="https://github.com/Power-xc/power-persona-sim"><b>Persona Sim</b></a><br />
+<a href="https://github.com/Power-xc/power-persona-sim"><b>Persona Sim</b></a> · <sub>기획·리서치</sub><br />
 <a href="https://github.com/Power-xc/power-persona-sim"><picture>
 <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/power-persona-sim-dark.gif" />
 <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/power-persona-sim-light.gif" width="400" alt="합성 페르소나 131명을 12셀로 뽑아 설문을 돌리고, 알려진 정답·분포 검증에 실패한 결과 전체를 DISCARD로 폐기하는 데모" />
@@ -96,7 +38,30 @@
 <sub><a href="https://github.com/Power-xc/power-persona-sim">Repo</a></sub>
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/Power-xc/ux-measure-lab"><b>UX MeasureLab</b></a><br />
+<a href="https://github.com/Power-xc/power-ux-harness"><b>power-ux-harness</b></a> · <sub>디자인</sub><br />
+<a href="https://github.com/Power-xc/power-ux-harness"><picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/power-ux-harness-dark.gif" />
+<img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/power-ux-harness-light.gif" width="400" alt="요청 한 줄마다 맞는 UX 스킬이 켜지고, 스킬 11개가 차례로 자기 예시를 고치기 전에서 고친 후로 바꾸는 데모. 첫 장면은 처음 보내는 계좌로 큰돈을 보낼 때만 받는 분 이름을 크게 보이고 확인 두 줄을 더하는 송금 화면" />
+</picture></a><br />
+<sub>같은 기능도 서비스마다 정답이 다르다. AI 코딩 에이전트가 규모·타깃·나이·상황부터 읽고 시니어 프로덕트 디자이너의 절차로 UX를 설계·검토하게 하는 스킬 11개. 비슷한 서비스 사례를 맥락에 맞춰 가져오는 벤치마킹(ux-benchmark)과 합성 페르소나 시뮬레이션부터 흐름·화면 설계서·문구·리뷰·접근성·기만 패턴·지표까지 같은 판정으로 잇습니다.</sub><br /><br />
+<img src="https://img.shields.io/badge/Agent_Skills-111111?style=flat-square" alt="Agent Skills" /> <img src="https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" /> <img src="https://img.shields.io/badge/UX_Benchmark-444444?style=flat-square" alt="UX Benchmark" /> <img src="https://img.shields.io/badge/WCAG_2.2-444444?style=flat-square" alt="WCAG 2.2" /><br />
+<sub><a href="https://github.com/Power-xc/power-ux-harness">Repo</a> · <a href="https://power-ux-harness-guide.vercel.app">Skill Guide</a></sub>
+</td>
+</tr>
+<tr></tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/Power-xc/nirguard"><b>NIRGuard</b></a> · <sub>검증·QA</sub><br />
+<a href="https://github.com/Power-xc/nirguard"><picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/nirguard-dark.gif" />
+<img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/nirguard-light.gif" width="400" alt="재촬영 시뮬레이션 사진에서 패턴을 복원해 상위 후보를 대조하고, 선명하면 후보를 받아들이고 흐리면 지목하지 않는 데모" />
+</picture></a><br />
+<sub>화면을 카메라로 재촬영한 유출본을 리뷰 세션까지 역추적하는 포렌식 워터마킹 검증 랩. 불확실하면 지목하지 않는 신뢰도 정책을 둡니다. (특허 출원 중)</sub><br /><br />
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" alt="OpenCV" /> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" /><br />
+<sub><a href="https://github.com/Power-xc/nirguard">Repo</a></sub>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/Power-xc/ux-measure-lab"><b>UX MeasureLab</b></a> · <sub>성장·검증</sub><br />
 <a href="https://github.com/Power-xc/ux-measure-lab"><picture>
 <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/ux-measure-lab-dark.gif" />
 <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/ux-measure-lab-light.gif" width="400" alt="가입 퍼널 질문에서 가장 큰 이탈을 찾고, 가설을 사전 등록한 실험의 결과를 코드가 판정한 뒤 사람이 결정을 기록하는 데모" />
@@ -109,17 +74,17 @@
 <tr></tr>
 <tr>
 <td width="50%" valign="top">
-<a href="https://github.com/Power-xc/nirguard"><b>NIRGuard</b></a><br />
-<a href="https://github.com/Power-xc/nirguard"><picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/nirguard-dark.gif" />
-<img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/nirguard-light.gif" width="400" alt="재촬영 시뮬레이션 사진에서 패턴을 복원해 상위 후보를 대조하고, 선명하면 후보를 받아들이고 흐리면 지목하지 않는 데모" />
+<a href="https://github.com/Power-xc/usage-gauge"><b>usage-gauge</b></a> · <sub>개발·운영 도구</sub><br />
+<a href="https://github.com/Power-xc/usage-gauge"><picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/usage-gauge-dark.gif" />
+<img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/usage-gauge-light.gif" width="400" alt="메뉴바와 패널의 남은 사용량이 차오르고, 그래프가 다이얼·바·스파크 바·숫자로 바뀐 뒤 소진 예측이 뜨는 데모" />
 </picture></a><br />
-<sub>화면을 카메라로 재촬영한 유출본을 리뷰 세션까지 역추적하는 포렌식 워터마킹 검증 랩. 불확실하면 지목하지 않는 신뢰도 정책을 둡니다. (특허 출원 중)</sub><br /><br />
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" alt="OpenCV" /> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" /><br />
-<sub><a href="https://github.com/Power-xc/nirguard">Repo</a></sub>
+<sub>쓰는 모든 AI의 남은 한도를, 언제 바닥나는지까지. Claude·Codex 등 100여 개 서비스의 남은 사용량과 초기화 시각을 화면 위 게이지와 메뉴바에 띄우고, 그래프 12종·스타일 3종 중에서 고릅니다. macOS·Windows.</sub><br /><br />
+<img src="https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white" alt="Swift" /> <img src="https://img.shields.io/badge/SwiftUI-0D96F6?style=flat-square&logo=swift&logoColor=white" alt="SwiftUI" /> <img src="https://img.shields.io/badge/Tauri-24C8D8?style=flat-square&logo=tauri&logoColor=white" alt="Tauri" /> <img src="https://img.shields.io/badge/macOS_%C2%B7_Windows-444444?style=flat-square" alt="macOS · Windows" /><br />
+<sub><a href="https://github.com/Power-xc/usage-gauge">Repo</a> · <a href="https://github.com/Power-xc/usage-gauge/releases/latest">Download</a></sub>
 </td>
 <td width="50%" valign="top">
-<a href="https://github.com/Power-xc/notion-jira-sync"><b>notion-jira-sync</b></a><br />
+<a href="https://github.com/Power-xc/notion-jira-sync"><b>notion-jira-sync</b></a> · <sub>배포·운영</sub><br />
 <a href="https://github.com/Power-xc/notion-jira-sync"><picture>
 <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/notion-jira-sync-dark.gif" />
 <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/notion-jira-sync-light.gif" width="400" alt="dry-run으로 Jira 생성·업데이트·스킵 계획과 주간보고 미리보기를 보여 준 뒤, --apply로 실제 반영하는 터미널 데모" />
@@ -131,7 +96,26 @@
 </tr>
 </table>
 
+**More** — 단계별로 만든 공개 저장소
+
+- **기획·리서치** · [career-agent-kit](https://github.com/Power-xc/career-agent-kit) — 회사 이름 하나로 딥리서치 → 사실 안에서 맞춤 이력서 → ATS·LLM·리크루터 3관점 심사 시뮬레이션
+- **디자인** · [ai-story-ux](https://github.com/Power-xc/ai-story-ux) — AI 스토리 서비스 Product Designer 사전 과제 답변을 웹·PDF·눌러 볼 수 있는 프로토타입으로 옮긴 저장소 · [Site](https://power-xc.github.io/ai-story-ux/)
+- **개발·구현** · [relay](https://github.com/Power-xc/relay) — 자연어 사내 업무요청을 AI가 구조화하고 담당자 배정·진행·해결 기록까지 잇는 경량 업무요청 서비스 · [Live Demo](https://relay-dusky-ten.vercel.app)
+- **개발·구현** · [huddy](https://github.com/Power-xc/huddy) — 영어 발표 중 키워드·호흡 안내를 화면에 띄우고 Claude 기반 피드백을 주는 12주 스피킹 훈련 도구
+- **검증·QA** · [power-sec-harness](https://github.com/Power-xc/power-sec-harness) — 내 앱을 출시 전에 먼저 공격해 구멍을 찾고 막는 보안 스킬 하네스 (침투 테스트 · 감사 · 출시 게이트)
+- **검증·QA** · [trading-rule-screener](https://github.com/Power-xc/trading-rule-screener) — 트레이딩 책 13권의 규칙 33개를 BTC 9년치로 기계 검증한 하네스 (99셀 중 통과 0)
+- **성장·마케팅** · [ig-reach-os](https://github.com/Power-xc/ig-reach-os) — 정책·법을 지키며 인스타그램에 도달하는 Meta 공식 API 기반 마케팅 자동화 백엔드
+- **학습** · [aws-saa-cert-quiz](https://github.com/Power-xc/aws-saa-cert-quiz) · [databricks-cert-quiz](https://github.com/Power-xc/databricks-cert-quiz) · [architect-exam-cbt](https://github.com/Power-xc/architect-exam-cbt) — 자격증 문제은행 웹앱 (AWS · Databricks · 건축기사)
+
+
 ## <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/mascot/11_laptop.png" height="32" alt="" /> Tech Stack
+
+### Workspace
+
+![Orca ADE](https://img.shields.io/badge/Orca_ADE-444444?style=flat-square)
+![Hermes Agent](https://img.shields.io/badge/Hermes_Agent-444444?style=flat-square)
+![Notion](https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white)
+![Obsidian](https://img.shields.io/badge/Obsidian-7C3AED?style=flat-square&logo=obsidian&logoColor=white)
 
 ### AI & Agent Workflow
 
@@ -139,7 +123,13 @@
 ![OpenAI Codex](https://img.shields.io/badge/OpenAI_Codex-412991?style=flat-square&logo=openai&logoColor=white)
 ![Kiro](https://img.shields.io/badge/Kiro-9B5DE5?style=flat-square&logo=kiro&logoColor=white)
 ![Figma MCP](https://img.shields.io/badge/Figma_MCP-F24E1E?style=flat-square&logo=figma&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![Slack](https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=slack&logoColor=white)
 ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white)
+
+### Model Training
+
+![NVIDIA H100](https://img.shields.io/badge/NVIDIA_H100-76B900?style=flat-square&logo=nvidia&logoColor=white)
 
 ### AI Video & Creative
 
