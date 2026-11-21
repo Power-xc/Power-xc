@@ -100,7 +100,7 @@
 
 - **기획·리서치** · [career-agent-kit](https://github.com/Power-xc/career-agent-kit) — 회사 이름 하나로 딥리서치 → 사실 안에서 맞춤 이력서 → ATS·LLM·리크루터 3관점 심사 시뮬레이션
 - **디자인** · [ai-story-ux](https://github.com/Power-xc/ai-story-ux) — AI 스토리 서비스 Product Designer 사전 과제 답변을 웹·PDF·눌러 볼 수 있는 프로토타입으로 옮긴 저장소 · [Site](https://power-xc.github.io/ai-story-ux/)
-- **개발·구현** · [relay](https://github.com/Power-xc/relay) — 자연어 사내 업무요청을 AI가 구조화하고 담당자 배정·진행·해결 기록까지 잇는 경량 업무요청 서비스 · [Live Demo](https://relay-poc.vercel.app)
+- **개발·구현** · [relay](https://github.com/Power-xc/relay) — 자연어 사내 업무요청을 AI가 구조화하고 담당자 배정·진행·해결 기록까지 잇는 경량 업무요청 서비스 · [Live Demo](https://relay-dusky-ten.vercel.app)
 - **개발·구현** · [huddy](https://github.com/Power-xc/huddy) — 영어 발표 중 키워드·호흡 안내를 화면에 띄우고 Claude 기반 피드백을 주는 12주 스피킹 훈련 도구
 - **검증·QA** · [power-sec-harness](https://github.com/Power-xc/power-sec-harness) — 내 앱을 출시 전에 먼저 공격해 구멍을 찾고 막는 보안 스킬 하네스 (침투 테스트 · 감사 · 출시 게이트)
 - **검증·QA** · [trading-rule-screener](https://github.com/Power-xc/trading-rule-screener) — 트레이딩 책 13권의 규칙 33개를 BTC 9년치로 기계 검증한 하네스 (99셀 중 통과 0)
@@ -130,7 +130,6 @@
 ### Model Training
 
 ![NVIDIA H100](https://img.shields.io/badge/NVIDIA_H100-76B900?style=flat-square&logo=nvidia&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 
 ### AI Video & Creative
 
