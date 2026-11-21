@@ -18,15 +18,13 @@
 
 **기획부터 학습·배포·운영·마케팅까지, 하나로 연결된 AI 개발 시스템**
 
-<img src="assets/ai-workflow-2.0.png" width="100%" alt="AI 개발 워크플로우 2.0: 기획·리서치, 디자인, 개발·구현, 모델 개발·학습, 검증·QA, 배포·운영, 성장·마케팅 7단계 위에 작업 환경, AI 하네스, 연결 생태계, 하네스 모음, NVIDIA H100 인프라가 놓인 구조도" />
-
 기획 → 디자인 → 개발·구현 → 모델 개발·학습 → 검증·QA → 배포·운영 → 성장·마케팅. 단계마다 도구를 바꾸지 않고, 한 AI 하네스가 여러 AI와 도구를 조율해 같은 품질 기준으로 끝까지 갑니다.
 
 | 층 | 구성 |
 | --- | --- |
-| **작업 환경** | <img src="assets/logos/orca.png" height="18" alt="" /> Orca ADE (개발 작업 공간·멀티에이전트) · <img src="assets/logos/hermes.png" height="18" alt="" /> Hermes Agent (마케팅 자동화·콘텐츠 실행) · <img src="https://cdn.simpleicons.org/notion/8B949E" height="18" alt="" /> <img src="https://cdn.simpleicons.org/obsidian/7C3AED" height="18" alt="" /> Notion + Obsidian (지식·프로젝트·자산 관리) |
-| **AI 하네스** (Execution Orchestrator) | <img src="https://cdn.simpleicons.org/claude/D97757" height="18" alt="" /> Claude Code (설계·구현·콘텐츠) · <img src="assets/logos/codex.png" height="18" alt="" /> Codex (개발·검증·테스트) · <img src="assets/logos/kiro.png" height="18" alt="" /> Kiro (인프라·클라우드 AWS) |
-| **연결 생태계** | <img src="https://cdn.simpleicons.org/github/8B949E" height="18" alt="" /> GitHub · <img src="https://cdn.simpleicons.org/databricks/FF3621" height="18" alt="" /> Databricks · <img src="https://cdn.simpleicons.org/supabase/3FCF8E" height="18" alt="" /> Supabase · <img src="assets/logos/slack.png" height="18" alt="" /> Slack · <img src="assets/logos/aws.png" height="18" alt="" /> AWS · <img src="https://cdn.simpleicons.org/vercel/8B949E" height="18" alt="" /> Vercel |
+| **작업 환경** | Orca ADE (개발 작업 공간·멀티에이전트) · Hermes Agent (마케팅 자동화·콘텐츠 실행) · <img src="https://cdn.simpleicons.org/notion/8B949E" height="18" alt="" /> <img src="https://cdn.simpleicons.org/obsidian/7C3AED" height="18" alt="" /> Notion + Obsidian (지식·프로젝트·자산 관리) |
+| **AI 하네스** (Execution Orchestrator) | <img src="https://cdn.simpleicons.org/claude/D97757" height="18" alt="" /> Claude Code (설계·구현·콘텐츠) · Codex (개발·검증·테스트) · Kiro (인프라·클라우드 AWS) |
+| **연결 생태계** | <img src="https://cdn.simpleicons.org/github/8B949E" height="18" alt="" /> GitHub · <img src="https://cdn.simpleicons.org/databricks/FF3621" height="18" alt="" /> Databricks · <img src="https://cdn.simpleicons.org/supabase/3FCF8E" height="18" alt="" /> Supabase · Slack · AWS · <img src="https://cdn.simpleicons.org/vercel/8B949E" height="18" alt="" /> Vercel |
 | **하네스 모음** | 개발·마케팅·학습·분석·운영 하네스. 바로 쓰는 실행 템플릿으로 반복 작업을 빠르고 안전하게 |
 | **인프라** | <img src="https://cdn.simpleicons.org/nvidia/76B900" height="18" alt="" /> NVIDIA H100 클라우드 GPU로 대규모 학습·실험 |
 
