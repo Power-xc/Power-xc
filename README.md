@@ -11,7 +11,7 @@
 복잡한 AI·B2B 제품을 사용자가 이해하고 실행할 수 있는 경험으로 설계하고, 기획부터 배포까지 직접 만들어 검증합니다.  
 기획·리서치 → 디자인 → 개발·구현 → 모델 개발·학습 → 검증·QA → 배포·운영 → 성장·마케팅을 하나의 AI 하네스로 잇습니다.
 
-<a href="https://www.linkedin.com/in/kangkeunpark/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a> <a href="mailto:pkk062300@naver.com"><img src="https://img.shields.io/badge/Email-1A7F37?style=flat-square" alt="Email" /></a>
+<a href="https://www.linkedin.com/in/kangkeunpark/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 
 🛠 **Now** — 피부·두피·다이어트 기록부터 성분 대조, 업체 맵, 비슷한 케이스 커뮤니티까지 잇는 케어 서비스 [모하우](https://www.mohow.co.kr)를 운영하며, 직접 학습한 정수리(탈모) 세그멘테이션 모델을 얹고 있습니다.
 
