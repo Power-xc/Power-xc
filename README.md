@@ -5,13 +5,13 @@
   <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=28&duration=2000&pause=1000&repeat=false&width=280&height=44&color=1F2328&lines=KangKeun+Park" alt="KangKeun Park" />
 </picture>
 
-<img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/mascot/title-bar.svg?v=3" width="330" alt="Product/UX Designer · AI Builder · Researcher" />
+<img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/mascot/title-bar.svg?v=4" width="330" alt="Senior Product Designer · AI-Native Builder" />
 
 **Senior Product Designer (AI · B2B) who prototypes in code**  
 복잡한 AI·B2B 제품을 사용자가 이해하고 실행할 수 있는 경험으로 설계하고, 기획부터 배포까지 직접 만들어 검증합니다.  
 기획·리서치 → 디자인 → 개발·구현 → 모델 개발·학습 → 검증·QA → 배포·운영 → 성장·마케팅을 하나의 AI 하네스로 잇습니다.
 
-<a href="https://www.linkedin.com/in/kangkeunpark/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="https://www.linkedin.com/in/kangkeunpark/"><img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/badges/linkedin.svg" alt="LinkedIn" /></a> <a href="mailto:pkk062300@naver.com"><img src="https://img.shields.io/badge/Naver_Mail-03C75A?style=flat-square&logo=naver&logoColor=white" alt="Naver Mail" /></a>
 
 🛠 **Now** — 피부·두피·다이어트 기록부터 성분 대조, 업체 맵, 비슷한 케이스 커뮤니티까지 잇는 케어 서비스 [모하우](https://www.mohow.co.kr)를 운영하며, 직접 학습한 정수리(탈모) 세그멘테이션 모델을 얹고 있습니다.
 
@@ -34,7 +34,7 @@
 <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/power-persona-sim-light.gif" width="400" alt="합성 페르소나 131명을 12셀로 뽑아 설문을 돌리고, 알려진 정답·분포 검증에 실패한 결과 전체를 DISCARD로 폐기하는 데모" />
 </picture></a><br />
 <sub>NVIDIA Nemotron 100만 합성 페르소나로 설문·심층인터뷰를 시뮬레이션하고, LLM 응답을 분포 적합도·known-truth·자기일관성·멀티모델 교차로 검증합니다. 알려진 정답이나 분포 검증에 실패하면 결과 전체를 버립니다.</sub><br /><br />
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/NVIDIA_Nemotron-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="NVIDIA Nemotron" /> <img src="https://img.shields.io/badge/LLM_Simulation-444444?style=flat-square" alt="LLM Simulation" /><br />
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> <img src="https://img.shields.io/badge/NVIDIA_Nemotron-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="NVIDIA Nemotron" /> <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/badges/llm-simulation.svg" alt="LLM Simulation" /><br />
 <sub><a href="https://github.com/Power-xc/power-persona-sim">Repo</a></sub>
 </td>
 <td width="50%" valign="top">
@@ -44,7 +44,7 @@
 <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/power-ux-harness-light.gif" width="400" alt="요청 한 줄마다 맞는 UX 스킬이 켜지고, 스킬 11개가 차례로 자기 예시를 고치기 전에서 고친 후로 바꾸는 데모. 첫 장면은 처음 보내는 계좌로 큰돈을 보낼 때만 받는 분 이름을 크게 보이고 확인 두 줄을 더하는 송금 화면" />
 </picture></a><br />
 <sub>같은 기능도 서비스마다 정답이 다르다. AI 코딩 에이전트가 규모·타깃·나이·상황부터 읽고 시니어 프로덕트 디자이너의 절차로 UX를 설계·검토하게 하는 스킬 11개. 비슷한 서비스 사례를 맥락에 맞춰 가져오는 벤치마킹(ux-benchmark)과 합성 페르소나 시뮬레이션부터 흐름·화면 설계서·문구·리뷰·접근성·기만 패턴·지표까지 같은 판정으로 잇습니다.</sub><br /><br />
-<img src="https://img.shields.io/badge/Agent_Skills-111111?style=flat-square" alt="Agent Skills" /> <img src="https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" /> <img src="https://img.shields.io/badge/UX_Benchmark-444444?style=flat-square" alt="UX Benchmark" /> <img src="https://img.shields.io/badge/WCAG_2.2-444444?style=flat-square" alt="WCAG 2.2" /><br />
+<img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/badges/agent-skills.svg" alt="Agent Skills" /> <img src="https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" /> <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/badges/ux-benchmark.svg" alt="UX Benchmark" /> <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/badges/wcag-22.svg" alt="WCAG 2.2" /><br />
 <sub><a href="https://github.com/Power-xc/power-ux-harness">Repo</a> · <a href="https://power-ux-harness-guide.vercel.app">Skill Guide</a></sub>
 </td>
 </tr>
@@ -67,7 +67,7 @@
 <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/ux-measure-lab-light.gif" width="400" alt="가입 퍼널 질문에서 가장 큰 이탈을 찾고, 가설을 사전 등록한 실험의 결과를 코드가 판정한 뒤 사람이 결정을 기록하는 데모" />
 </picture></a><br />
 <sub>질문 하나로 측정을 자동 구성해 가설 → 사전 등록 실험 → 사람의 결정으로 잇는 워크스페이스. AI는 후보를 제안하고, 판정은 코드가 합니다.</sub><br /><br />
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/Experimentation-444444?style=flat-square" alt="Experimentation" /> <img src="https://img.shields.io/badge/AI_Hypotheses-444444?style=flat-square" alt="AI Hypotheses" /><br />
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/badges/experimentation.svg" alt="Experimentation" /> <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/badges/ai-hypotheses.svg" alt="AI Hypotheses" /><br />
 <sub><a href="https://github.com/Power-xc/ux-measure-lab">Repo</a> · <a href="https://ux-measure-lab.vercel.app">Live Demo</a></sub>
 </td>
 </tr>
@@ -80,7 +80,7 @@
 <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/featured/usage-gauge-light.gif" width="400" alt="메뉴바와 패널의 남은 사용량이 차오르고, 그래프가 다이얼·바·스파크 바·숫자로 바뀐 뒤 소진 예측이 뜨는 데모" />
 </picture></a><br />
 <sub>쓰는 모든 AI의 남은 한도를, 언제 바닥나는지까지. Claude·Codex 등 100여 개 서비스의 남은 사용량과 초기화 시각을 화면 위 게이지와 메뉴바에 띄우고, 그래프 12종·스타일 3종 중에서 고릅니다. macOS·Windows.</sub><br /><br />
-<img src="https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white" alt="Swift" /> <img src="https://img.shields.io/badge/SwiftUI-0D96F6?style=flat-square&logo=swift&logoColor=white" alt="SwiftUI" /> <img src="https://img.shields.io/badge/Tauri-24C8D8?style=flat-square&logo=tauri&logoColor=white" alt="Tauri" /> <img src="https://img.shields.io/badge/macOS_%C2%B7_Windows-444444?style=flat-square" alt="macOS · Windows" /><br />
+<img src="https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white" alt="Swift" /> <img src="https://img.shields.io/badge/SwiftUI-0D96F6?style=flat-square&logo=swift&logoColor=white" alt="SwiftUI" /> <img src="https://img.shields.io/badge/Tauri-24C8D8?style=flat-square&logo=tauri&logoColor=white" alt="Tauri" /> <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/badges/macos-windows.svg" alt="macOS · Windows" /><br />
 <sub><a href="https://github.com/Power-xc/usage-gauge">Repo</a> · <a href="https://github.com/Power-xc/usage-gauge/releases/latest">Download</a></sub>
 </td>
 <td width="50%" valign="top">
@@ -100,19 +100,19 @@
 
 ### Workspace
 
-![Orca ADE](https://img.shields.io/badge/Orca_ADE-444444?style=flat-square)
-![Hermes Agent](https://img.shields.io/badge/Hermes_Agent-444444?style=flat-square)
+![Orca ADE](https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/badges/orca-ade.svg)
+![Hermes Agent](https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/badges/hermes-agent.svg)
 ![Notion](https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white)
 ![Obsidian](https://img.shields.io/badge/Obsidian-7C3AED?style=flat-square&logo=obsidian&logoColor=white)
 
 ### AI & Agent Workflow
 
 ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=claude&logoColor=white)
-![OpenAI Codex](https://img.shields.io/badge/OpenAI_Codex-412991?style=flat-square&logo=openai&logoColor=white)
-![Kiro](https://img.shields.io/badge/Kiro-9B5DE5?style=flat-square&logo=kiro&logoColor=white)
+![OpenAI Codex](https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/badges/openai-codex.svg)
+![Kiro](https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/badges/kiro.svg)
 ![Figma MCP](https://img.shields.io/badge/Figma_MCP-F24E1E?style=flat-square&logo=figma&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![Slack](https://img.shields.io/badge/Slack-4A154B?style=flat-square&logo=slack&logoColor=white)
+![Slack](https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/badges/slack.svg)
 ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white)
 
 ### Model Training
@@ -121,14 +121,14 @@
 
 ### AI Video & Creative
 
-![Higgsfield](https://img.shields.io/badge/Higgsfield-111111?style=flat-square)
-![Magnific](https://img.shields.io/badge/Magnific-5B3FD9?style=flat-square)
+![Higgsfield](https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/badges/higgsfield.svg)
+![Magnific](https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/badges/magnific.svg)
 
 ### Product Design
 
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
-![Manyfast](https://img.shields.io/badge/Manyfast-444444?style=flat-square)
-![UX Pilot](https://img.shields.io/badge/UX_Pilot-555555?style=flat-square)
+![Manyfast](https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/badges/manyfast.svg)
+![UX Pilot](https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/badges/ux-pilot.svg)
 
 ### Build & Ship
 
@@ -137,15 +137,15 @@
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-181818?style=flat-square&logo=supabase&logoColor=3FCF8E)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+![AWS](https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/badges/aws.svg)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
 ## <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/mascot/02_cheer.png" height="32" alt="" /> Certifications
 
-- ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white) **Certified AI Practitioner** · 2026
+- ![AWS](https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/badges/aws.svg) **Certified AI Practitioner** · 2026
 - ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white) **Certified Generative AI Engineer Associate** · 2026
 - ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white) **Certified Data Engineer Associate** · 2026
-- ![HRD Korea](https://img.shields.io/badge/HRD_Korea-1C6BBA?style=flat-square) **NCS 디지털디자인 (Digital Design) L5** · 한국산업인력공단 · 2021
+- ![HRD Korea](https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/badges/hrd-korea.svg) **NCS 디지털디자인 (Digital Design) L5** · 한국산업인력공단 · 2021
 
 ## <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/mascot/14_peek.png" height="32" alt="" /> GitHub
 
