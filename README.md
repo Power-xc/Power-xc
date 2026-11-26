@@ -137,12 +137,12 @@
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-181818?style=flat-square&logo=supabase&logoColor=3FCF8E)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
+![AWS](https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/badges/aws.svg)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
 ## <img src="https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/mascot/02_cheer.png" height="32" alt="" /> Certifications
 
-- ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white) **Certified AI Practitioner** · 2026
+- ![AWS](https://raw.githubusercontent.com/Power-xc/Power-xc/main/assets/badges/aws.svg) **Certified AI Practitioner** · 2026
 - ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white) **Certified Generative AI Engineer Associate** · 2026
 - ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white) **Certified Data Engineer Associate** · 2026
 - ![HRD Korea](https://img.shields.io/badge/HRD_Korea-1C6BBA?style=flat-square) **NCS 디지털디자인 (Digital Design) L5** · 한국산업인력공단 · 2021
